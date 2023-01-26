@@ -1,0 +1,47 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM  C2_term  0.0000000000  1.1703000000
+FIXQ:ATOM  C1_term  0.0000000000  1.1703000000
+FIXQ:ATOM  C3_term  0.0000000000  1.1703000000
+FIXQ:ATOM  C4_term  0.0000000000  1.1703000000
+FIXQ:ATOM    B_THB  0.0000000000  1.2020000000
+FIXQ:ATOM    O_THB  0.0000000000  1.1325000000
+FIXQ:ATOM  C_O_THB  0.0000000000  1.1703000000
+FIXQ:ATOM C_O_BR_THB  0.0000000000  1.1703000000
+FIXQ:ATOM  H3_term  0.0000000000  0.7308000000
+FIXQ:ATOM  H5_term  0.0000000000  0.7308000000
+FIXQ:ATOM H_O_BR_THB  0.0000000000  0.7308000000
+FIXQ:ATOM  B4_term  0.0000000000  1.2020000000
+FIXQ:ATOM  O5_term  0.0000000000  1.1325000000
+FIXQ:ATOM  H6_term  0.0000000000  0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB          
+# ----------------------------------------------------
+FIXQ:BOND   C1_term   C2_term  -0.1450839926
+FIXQ:BOND   C2_term   C3_term   0.1094089683
+FIXQ:BOND   C3_term   C4_term  -0.1279184884
+FIXQ:BOND     B_THB   C1_term   0.2449884391
+FIXQ:BOND     B_THB     O_THB   0.3469220792
+FIXQ:BOND   C_O_THB     O_THB   0.1499881007
+FIXQ:BOND  C_O_BR_THB   C_O_THB  -0.0757441684
+FIXQ:BOND   C_O_THB   C_O_THB  -0.0001304296
+FIXQ:BOND   C2_term   H3_term  -0.1199736113
+FIXQ:BOND   C4_term   H5_term  -0.1258211974
+FIXQ:BOND  C_O_BR_THB  H_O_BR_THB  -0.1999985005
+FIXQ:BOND   B4_term   C3_term   0.2595871777
+FIXQ:BOND   B4_term   O5_term   0.3761193818
+FIXQ:BOND   H6_term   O5_term   0.4484475884

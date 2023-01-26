@@ -1,0 +1,23 @@
+# van der Waals
+#---------------
+# The following mathemetical form is supported:
+#  - MM3(CAP):   EPSILON*(1.84e5*exp(-12*r/SIGMA)-2.25*(SIGMA/r)^6)
+#  - LJ:    4.0*EPSILON*((SIGMA/r)^12 - (SIGMA/r)^6)
+
+LJ:UNIT SIGMA A
+LJ:UNIT EPSILON kcalmol
+LJ:SCALE 1 0.0
+LJ:SCALE 2 0.0
+LJ:SCALE 3 1.0
+# ---------------------------------------------
+# KEY      ffatype    SIGMA  EPSILON
+# ---------------------------------------------
+LJ:PARS    C_TR  3.4730  0.0951
+LJ:PARS    N_TR  3.2626  0.0774
+LJ:PARS C1_term  3.4730  0.0951
+LJ:PARS C2_term  3.4730  0.0951
+LJ:PARS C3_term  3.4730  0.0951
+LJ:PARS C4_term  3.4730  0.0951
+LJ:PARS H3_term  2.8464  0.0152
+LJ:PARS H4_term  2.8464  0.0152
+LJ:PARS H5_term  2.8464  0.0152

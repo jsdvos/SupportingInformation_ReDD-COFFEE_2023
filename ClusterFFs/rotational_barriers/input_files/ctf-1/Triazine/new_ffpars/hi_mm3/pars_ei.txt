@@ -1,0 +1,27 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB
+# ----------------------------------------------------
+FIXQ:BOND     C_TR     N_TR   0.2983785083
+FIXQ:BOND  C1_term     C_TR   0.0193559361
+FIXQ:BOND  C1_term  C2_term  -0.0358389845
+FIXQ:BOND  C2_term  C3_term  -0.0044097900
+FIXQ:BOND  C3_term  C4_term  -0.0127868160
+FIXQ:BOND  C2_term  H3_term  -0.1102127245
+FIXQ:BOND  C3_term  H4_term  -0.0980389424
+FIXQ:BOND  C4_term  H5_term  -0.0965505301

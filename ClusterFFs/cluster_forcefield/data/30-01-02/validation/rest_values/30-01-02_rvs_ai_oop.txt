@@ -1,0 +1,13 @@
+# Out-of-plane distances [A] for the system ../structs/opt_ai/30-01-02_opt_ai.chk
+C_BC3_30-01-02(4).O2_term(23).O2_term(25).B1_term(22) 0.03814271885053167
+H4_term(28).O2_term(23).O4_term(27).B3_term(24) -0.009090435431933563
+H4_term(29).O2_term(25).O4_term(27).B3_term(26) -0.002312255148663309
+C_BC3_30-01-02(5).O2_term(31).O2_term(33).B1_term(30) 0.03814122827203729
+H4_term(36).O2_term(31).O4_term(35).B3_term(32) -0.009090008035073907
+H4_term(37).O2_term(33).O4_term(35).B3_term(34) -0.0023136946947073314
+C_BC3_30-01-02(6).O2_term(39).O2_term(41).B1_term(38) 0.028077724934228984
+H4_term(44).O2_term(39).O4_term(43).B3_term(40) 0.0015945973378704986
+H4_term(45).O2_term(41).O4_term(43).B3_term(42) -0.0014002490636043149
+C_BC3_30-01-02(7).O2_term(47).O2_term(49).B1_term(46) -0.03038243929000012
+H4_term(52).O2_term(47).O4_term(51).B3_term(48) 0.001597681922735345
+H4_term(53).O2_term(49).O4_term(51).B3_term(50) -0.001400009339540611

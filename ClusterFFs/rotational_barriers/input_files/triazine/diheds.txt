@@ -1,0 +1,16 @@
+2_Phenyl_Nitrile_Triazine 2,0,10,13
+3_Phenyl_Nitrile_Triazine 1,0,9,12
+Adamantane_Nitrile_Triazine 8,4,22,25
+BiPhenyl_Nitrile_Triazine 1,0,20,23
+ETTA_Nitrile_Triazine 5,7,42,45
+ExtendedTrisPhenyl_Nitrile_Triazine 19,21,45,46
+F_Nitrile_Triazine 19,18,9,7
+N-TrisPhenyl_Nitrile_Triazine 16,18,31,32
+PMDA_Nitrile_Triazine 21,23,38,41
+P_Nitrile_Triazine 43,41,74,75
+Pyrene_Nitrile_Triazine 1,0,24,25
+T-brick_Nitrile_Triazine 16,20,42,43
+TetraPhenylMethane_Nitrile_Triazine 5,1,41,44
+TetraPhenylSilane_Nitrile_Triazine 5,1,41,44
+Triazine-TrisPhenyl_Nitrile_Triazine 1,0,36,39
+TrisPhenyl_Nitrile_Triazine 1,0,39,40

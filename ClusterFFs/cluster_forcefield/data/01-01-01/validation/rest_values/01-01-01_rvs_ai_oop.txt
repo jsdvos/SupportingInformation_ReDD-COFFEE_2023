@@ -1,0 +1,21 @@
+# Out-of-plane distances [A] for the system ../structs/opt_ai/01-01-01_opt_ai.chk
+B1_term(10).C_HC2_01-01-01(2).C_HC2_01-01-01(5).C_BC2_01-01-01(0) 0.0
+B1_term(23).C_HC2_01-01-01(3).C_HC2_01-01-01(4).C_BC2_01-01-01(1) -0.0
+C_BC2_01-01-01(0).C_HC2_01-01-01(4).H_C_01-01-01(9).C_HC2_01-01-01(2) 0.0
+C_BC2_01-01-01(1).C_HC2_01-01-01(5).H_C_01-01-01(8).C_HC2_01-01-01(3) 0.0
+C_BC2_01-01-01(1).C_HC2_01-01-01(2).H_C_01-01-01(7).C_HC2_01-01-01(4) -0.0
+C_BC2_01-01-01(0).C_HC2_01-01-01(3).H_C_01-01-01(6).C_HC2_01-01-01(5) 0.0
+C_BC2_01-01-01(0).O2_term(11).O2_term(12).B1_term(10) 0.0
+C3_term(14).C4_term(15).O2_term(11).C3_term(13) -0.0
+C3_term(13).C4_term(16).O2_term(12).C3_term(14) 0.0
+C3_term(13).C5_term(17).H5_term(19).C4_term(15) -0.0
+C3_term(14).C5_term(18).H5_term(20).C4_term(16) 0.0
+C4_term(15).C5_term(18).H6_term(21).C5_term(17) 0.0
+C4_term(16).C5_term(17).H6_term(22).C5_term(18) 0.0
+C_BC2_01-01-01(1).O2_term(24).O2_term(25).B1_term(23) -0.0
+C3_term(27).C4_term(28).O2_term(24).C3_term(26) -0.0
+C3_term(26).C4_term(29).O2_term(25).C3_term(27) 0.0
+C3_term(26).C5_term(30).H5_term(32).C4_term(28) 0.0
+C3_term(27).C5_term(31).H5_term(33).C4_term(29) 0.0
+C4_term(28).C5_term(31).H6_term(34).C5_term(30) -0.0
+C4_term(29).C5_term(30).H6_term(35).C5_term(31) 0.0

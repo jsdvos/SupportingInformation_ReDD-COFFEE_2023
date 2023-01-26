@@ -1,0 +1,125 @@
+# Bond stretch
+# ============
+#
+# Mathematical form:
+# E_BONDHARM = 0.5*K*(r - R0)**2
+#
+
+BONDHARM:UNIT K kcalmol/A**2
+BONDHARM:UNIT R0 A
+
+#-------------------------------------------------------------------------------------------
+# KEY         label0                label1                K                R0               
+#-------------------------------------------------------------------------------------------
+BONDHARM:PARS B2_term               N1_term               1.0014073001e+03 1.4359633139e+00 
+BONDHARM:PARS H5_term               B4_term               5.0364631251e+02 1.1811163236e+00 
+BONDHARM:PARS H4_term               N3_term               1.0589188944e+03 1.0434227963e+00 
+BONDHARM:PARS N1_term               C_C3N_30-07-11        1.0594494619e+03 1.4500749042e+00 
+BONDHARM:PARS N3_term               B2_term               1.0014073001e+03 1.4359633139e+00 
+BONDHARM:PARS H_C_30-07-11          C_H2C2_30-07-11       6.6213877753e+02 1.1094007949e+00 
+BONDHARM:PARS C_C3N_30-07-11        C_H2C2_30-07-11       6.9959179871e+02 1.5140000000e+00 
+BONDHARM:PARS B4_term               N3_term               1.0014073001e+03 1.4359633139e+00 
+BONDHARM:PARS H3_term               B2_term               5.0364631251e+02 1.1811163236e+00 
+
+
+
+# Angle bend
+# ============
+#
+# Mathematical form:
+# E_BENDCOS = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+BENDCOS:UNIT A kcalmol
+BENDCOS:UNIT PHI0 rad
+
+#-------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                M  A                PHI0             
+#-------------------------------------------------------------------------------------------------------------------
+BENDCOS:PARS H4_term               N3_term               B4_term               3  2.2538906301e+01 0.0000000000e+00 
+BENDCOS:PARS H4_term               N3_term               B2_term               3  2.2538906301e+01 0.0000000000e+00 
+BENDCOS:PARS N3_term               B2_term               N1_term               3  7.7600828201e+01 0.0000000000e+00 
+BENDCOS:PARS B2_term               N1_term               C_C3N_30-07-11        3  3.9645823227e+01 0.0000000000e+00 
+BENDCOS:PARS B4_term               N3_term               B2_term               3  3.6930601736e+01 0.0000000000e+00 
+BENDCOS:PARS N3_term               B4_term               N3_term               3  7.7600828201e+01 0.0000000000e+00 
+BENDCOS:PARS N3_term               B2_term               H3_term               3  2.8349533151e+01 0.0000000000e+00 
+BENDCOS:PARS H5_term               B4_term               N3_term               3  2.8349533151e+01 0.0000000000e+00 
+BENDCOS:PARS B2_term               N1_term               B2_term               3  3.6930601736e+01 0.0000000000e+00 
+BENDCOS:PARS H3_term               B2_term               N1_term               3  2.8349533151e+01 0.0000000000e+00 
+
+
+
+# Angle bend
+# ============
+#
+# Mathematical form:
+# E_BENDCHARM = 0.5*K*(cos(phi) - COS0)**2
+#
+
+BENDCHARM:UNIT K kcalmol
+BENDCHARM:UNIT COS0 1
+
+#------------------------------------------------------------------------------------------------------------------
+# KEY          label0                label1                label2                K                COS0             
+#------------------------------------------------------------------------------------------------------------------
+BENDCHARM:PARS C_H2C2_30-07-11       C_C3N_30-07-11        C_H2C2_30-07-11       2.4098466816e+02 -3.3331324757e-01 
+BENDCHARM:PARS C_C3N_30-07-11        C_H2C2_30-07-11       C_C3N_30-07-11        2.4098466816e+02 -3.3331324757e-01 
+BENDCHARM:PARS H_C_30-07-11          C_H2C2_30-07-11       C_C3N_30-07-11        1.3198152975e+02 -3.3331324757e-01 
+BENDCHARM:PARS N1_term               C_C3N_30-07-11        C_H2C2_30-07-11       3.4153873791e+02 -3.3331324757e-01 
+BENDCHARM:PARS H_C_30-07-11          C_H2C2_30-07-11       H_C_30-07-11          8.4934831918e+01 -3.3331324757e-01 
+
+
+
+# Torsion
+# ============
+#
+# Mathematical form:
+# E_TORSION = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+TORSION:UNIT A kcalmol
+TORSION:UNIT PHI0 rad
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                label3                M  A                PHI0             
+#-----------------------------------------------------------------------------------------------------------------------------------------
+TORSION:PARS H4_term               N3_term               B2_term               H3_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N3_term               B4_term               N3_term               H4_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N3_term               B2_term               N1_term               B2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N3_term               B2_term               N1_term               C_C3N_30-07-11        2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H4_term               N3_term               B2_term               N1_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS B2_term               N1_term               C_C3N_30-07-11        C_H2C2_30-07-11       3  0.0000000000e+00 3.1415926536e+00 
+TORSION:PARS C_H2C2_30-07-11       C_C3N_30-07-11        C_H2C2_30-07-11       H_C_30-07-11          3  2.3544444444e-01 3.1415926536e+00 
+TORSION:PARS H5_term               B4_term               N3_term               B2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N1_term               C_C3N_30-07-11        C_H2C2_30-07-11       H_C_30-07-11          3  2.3544444444e-01 3.1415926536e+00 
+TORSION:PARS H3_term               B2_term               N1_term               B2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N3_term               B4_term               N3_term               B2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H3_term               B2_term               N1_term               C_C3N_30-07-11        2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N1_term               C_C3N_30-07-11        C_H2C2_30-07-11       C_C3N_30-07-11        3  2.3544444444e-01 3.1415926536e+00 
+TORSION:PARS B4_term               N3_term               B2_term               N1_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H5_term               B4_term               N3_term               H4_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_H2C2_30-07-11       C_C3N_30-07-11        C_H2C2_30-07-11       C_C3N_30-07-11        3  2.3544444444e-01 3.1415926536e+00 
+TORSION:PARS B4_term               N3_term               B2_term               H3_term               2  6.7371103797e+00 3.1415926536e+00 
+
+
+
+# Inversion
+# ============
+#
+# Mathematical form:
+# E_OOPCOS = 0.5*A*(1 - cos(phi))
+#
+
+OOPCOS:UNIT A kcalmol
+
+#--------------------------------------------------------------------------------------------------------------------
+# KEY       label0                label1                label2                label3                A                
+#--------------------------------------------------------------------------------------------------------------------
+OOPCOS:PARS B4_term               H4_term               B2_term               N3_term               2.0000000000e+00 
+OOPCOS:PARS B2_term               B2_term               C_C3N_30-07-11        N1_term               2.0000000000e+00 
+OOPCOS:PARS H4_term               B2_term               B4_term               N3_term               2.0000000000e+00 
+OOPCOS:PARS B2_term               B4_term               H4_term               N3_term               2.0000000000e+00 
+OOPCOS:PARS B2_term               C_C3N_30-07-11        B2_term               N1_term               2.0000000000e+00 
+
+
+

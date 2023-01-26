@@ -1,0 +1,342 @@
+
+      #############################
+      ##                         ##
+      ##  Atom Type Definitions  ##
+      ##                         ##
+      #############################
+
+
+atom          1    C     "CSP3 ALKANE"                  6    12.000    4
+atom          2    C     "CSP2 ALKENE"                  6    12.000    3
+atom          3    C     "CSP2 CARBONYL"                6    12.000    3
+atom          4    C     "CSP ALKYNE"                   6    12.000    2
+atom          5    H     "EXCEPT ON N,O,S"              1     1.008    1
+atom          6    O     "C-O-H, C-O-C, O-O"            8    15.995    2
+atom          7    O     "O=C CARBONYL"                 8    15.995    1
+atom          8    N     "NSP3"                         7    14.003    3
+atom          9    N     "NSP2"                         7    14.003    3
+atom         10    N     "NSP"                          7    14.003    1
+atom         11    F     "FLUORIDE"                     9    18.998    1
+atom         12    Cl    "CHLORIDE"                    17    34.969    1
+atom         13    Br    "BROMIDE"                     35    78.918    1
+atom         14    I     "IODIDE"                      53   126.900    1
+atom         15    S     "-S- SULFIDE"                 16    31.972    2
+atom         16    S+    ">S+ SULFONIUM"               16    31.972    2
+atom         17    S     ">S=O SULFOXIDE"              16    31.972    3
+atom         18    S     ">SO2 SULFONE"                16    31.972    4
+atom         19    Si    "SILANE"                      14    27.977    4
+atom         20    *     "NOT USED"                     0     0.000    0
+atom         21    H     "-OH ALCOHOL"                  1     1.008    1
+atom         22    C     "CYCLOPROPANE"                 6    12.000    4
+atom         23    H     "NH AMINE/IMINE"               1     1.008    1
+atom         24    H     "COOH CARBOXYL"                1     1.008    1
+atom         25    P     ">P- PHOSPHINE"               15    30.994    3
+atom         26    B     ">B- TRIGONAL"                 5    11.009    3
+atom         27    B     ">B< TETRAHEDRAL"              5    11.009    4
+atom         28    H     "H-N-C=O AMIDE"                1     1.008    1
+atom         29    C*    "RADICAL"                      6    12.000    3
+atom         30    C+    "CARBONIUM ION"                6    12.000    3
+atom         31    Ge    "GERMANIUM"                   32    73.922    2
+atom         32    Sn    "TIN"                         50   117.902    2
+atom         33    Pb    "LEAD (IV)"                   82   207.977    4
+atom         34    Se    "SELENIUM"                    34    79.917    2
+atom         35    Te    "TELLURIUM"                   52   129.907    2
+atom         36    D     "DEUTERIUM"                    1     2.014    1
+atom         37    N     "-N=C-/PYR (DELOCLZD)"         7    14.003    2
+atom         38    C     "CSP2 CYCLOPROPENE"            6    12.000    3
+atom         39    N+    "NSP3 AMMONIUM"                7    14.003    4
+atom         40    N     "NSP2 PYRROLE"                 7    14.003    3
+atom         41    O     "OSP2 FURAN"                   8    15.995    2
+atom         42    S     "SSP2 THIOPHENE"              16    31.972    2
+atom         43    N     "=N-O AZOXY (LOCAL)"           7    14.003    2
+atom         44    H     "SH THIOL"                     1     1.008    1
+atom         45    N     "AZIDE (CENTER N)"             7    14.003    2
+atom         46    N     "NITRO"                        7    14.003    3
+atom         47    O     "CARBOXYLATE ION"              8    15.995    1
+atom         48    H     "AMMONIUM"                     1     1.008    1
+atom         49    O     "EPOXY"                        8    15.995    2
+atom         50    C     "BENZENE (LOCALIZED)"          6    12.000    3
+atom         51    He    "HELIUM"                       2     4.003    0
+atom         52    Ne    "NEON"                        10    20.179    0
+atom         53    Ar    "ARGON"                       18    39.948    0
+atom         54    Kr    "KRYPTON"                     36    83.800    0
+atom         55    Xe    "XENON"                       54   131.300    0
+atom         56    C     "CSP3 CYCLOBUTANE"             6    12.000    4
+atom         57    C     "CSP2 CYCLOBUTENE"             6    12.000    3
+atom         58    C     "C=O CYCLOBUTANONE"            6    12.000    3
+atom         59    Mg    "MAGNESIUM"                   12    24.301    2
+atom         60    P     "PHOSPHORUS (V)"              15    30.994    4
+atom         61    Fe    "IRON (II)"                   26    55.847    2
+atom         62    Fe    "IRON (III)"                  26    55.847    3
+atom         63    Ni    "NICKEL (II)"                 28    58.710    2
+atom         64    Ni    "NICKEL (III)"                28    58.710    3
+atom         65    Co    "COBALT (II)"                 27    58.933    2
+atom         66    Co    "COBALT (III)"                27    58.933    3
+atom         67    C     "C=O CYCLOPROPANONE"           6    12.000    3
+atom         68    C     "ALLENE CSP =C="               6    12.000    2
+atom         69    O     "AMINE OXIDE OXYGEN"           8    15.995    1
+atom         70    O     "KETONIUM OXYGEN"              8    15.995    1
+atom         71    C     "KETONIUM CARBON"              6    12.000    2
+atom         72    N     "=N- IMINE (LOCALZD)"          7    14.003    2
+atom         73    H     "H-O ENOL/PHENOL"              1     1.008    1
+atom         74    S     "S=C"                         16    31.972    1
+atom         75    O     "O-H, O-C (CARBOXYL)"          8    15.995    2
+atom         76    O     "O=C-C=O"                      8    15.995    1
+atom         77    O     "O=C-O-H (ACID)"               8    15.995    1
+atom         78    O     "O=C-O-C (ESTER)"              8    15.995    1
+atom         79    O     "O=C-N< (AMIDE)"               8    15.995    1
+atom         80    O     "O=C-X (HALIDE)"               8    15.995    1
+atom         81    O     "O=C-C=C<"                     8    15.995    1
+atom         82    O     "O=C-O-C=O"                    8    15.995    1
+atom         83    O     "O=C(OH)(OH)"                  8    15.995    1
+atom         84    O     "O=C(OH)(OC)"                  8    15.995    1
+atom         85    O     "O=C(OH)(N<)"                  8    15.995    1
+atom         86    O     "O=C(OH)(X)"                   8    15.995    1
+atom         87    O     "O=C(OH)(C=C<)"                8    15.995    1
+atom         88    O     "O=C(OH)(O-C=O)"               8    15.995    1
+atom         89    O     "O=C(O-C)(OC)"                 8    15.995    1
+atom         90    O     "O=C(O-C)(N<)"                 8    15.995    1
+atom         91    O     "O=C(O-C)(X)"                  8    15.995    1
+atom         92    O     "O=C(O-C)(C=C<)"               8    15.995    1
+atom         93    O     "O=C(O-C)(O-C=O)"              8    15.995    1
+atom         94    O     "O=C(N<)(N<)"                  8    15.995    1
+atom         95    O     "O=C(N<)(X)"                   8    15.995    1
+atom         96    O     "O=C(N<)(C=C<)"                8    15.995    1
+atom         97    O     "O=C(N<)(O-C=O)"               8    15.995    1
+atom         98    O     "O=C(X)(X)"                    8    15.995    1
+atom         99    O     "O=C(X)(C=C<)"                 8    15.995    1
+atom        100    O     "O=C(X)(O-C=O)"                8    15.995    1
+atom        101    O     "O=C(C=C)(C=C)"                8    15.995    1
+atom        102    O     "O=C(C=C)(O-C=O)"              8    15.995    1
+atom        103    O     "O=C(O-C=O)(O-C=O)"            8    15.995    1
+atom        104    S     "-S-S- DISULFIDE"             16    31.972    2
+atom        105    S     "-S- POLYSULFIDE"             16    31.972    2
+atom        106    C     "=C=O KETENE"                  6    12.000    2
+atom        107    N     "-N=N- AZO (LOCAL)"            7    14.003    2
+atom        108    N     "=N-OH OXIME"                  7    14.003    2
+atom        109    N     "-N= AZOXY (LOCAL)"            7    14.003    2
+atom        110    N+    "-N(+)= IMMINIUM"              7    14.003    2
+atom        111    N+    "-N(+)= PYRIDINIUM"            7    14.003    2
+atom        112    *     "NOT USED"                     0     0.000    0
+atom        113    CH    "C FERROCENE-H"                6    12.000    3
+atom        114    CP    "C FERROCENE-C"                6    12.000    3
+atom        115    O     "O=C(C=O)(C=O)"                8    15.995    1
+atom        116    O     "O=C(C=O)(OH)"                 8    15.995    1
+atom        117    O     "O=C(C=O)(OC)"                 8    15.995    1
+atom        118    O     "O=C(C=O)(N<)"                 8    15.995    1
+atom        119    O     "O=C(C=O)(X)"                  8    15.995    1
+atom        120    O     "O=C(C=O)(C=C<)"               8    15.995    1
+atom        121    O     "O=C(C=O)(O-C=O)"              8    15.995    1
+atom        122    *     "NOT USED"                     0     0.000    0
+atom        123    *     "NOT USED"                     0     0.000    0
+atom        124    H     "H-C ACETYLENE"                1     1.008    1
+atom        125    Ca    "CALCIUM"                     20    39.963    0
+atom        126    Sr    "STRONTIUM"                   38    87.906    0
+atom        127    Ba    "BARIUM"                      56   135.905    0
+atom        128    La    "LANTHANUM"                   57   138.906    0
+atom        129    Ce    "CERIUM"                      58   139.905    0
+atom        130    Pr    "PRAESEODYMIUM"               59   140.907    0
+atom        131    Nd    "NEODYMIUM"                   60   141.908    0
+atom        132    Pm    "PROMETHIUM"                  61   145.000    0
+atom        133    Sm    "SAMARIUM"                    62   151.920    0
+atom        134    Eu    "EUROPIUM"                    63   152.921    0
+atom        135    Gd    "GADOLINIUM"                  64   157.924    0
+atom        136    Tb    "TERBIUM"                     65   159.925    0
+atom        137    Dy    "DYSPROSIUM"                  66   163.929    0
+atom        138    Ho    "HOLMIUM"                     67   164.930    0
+atom        139    Er    "ERBIUM"                      68   165.930    0
+atom        140    Tm    "THULIUM"                     69   168.934    0
+atom        141    Yb    "YTTERBIUM"                   70   173.939    0
+atom        142    Lu    "LUTETIUM"                    71   174.941    0
+atom        143    N     "=N-O AXOXY (DELOC)"           7    14.003    2
+atom        144    N     "-N= AZOXY (DELOC)"            7    14.003    2
+atom        145    O     ">N-OH HYDROXYAMINE"           8    15.995    2
+atom        146    N     ">N-OH HYDROXYAMINE"           7    14.003    3
+atom        147    *     "NOT USED"                     0     0.000    0
+atom        148    O     "-O- ANHYDRIDE (LOCL)"         8    15.995    2
+atom        149    O     "-O- ANHYDRIDE (DELO)"         8    15.995    2
+atom        150    N     "NSP3 HYDRAZINE"               7    14.003    3
+atom        151    N     "NSP2 AMIDE (DELOC)"           7    14.003    3
+atom        152    *     "NOT USED"                     0     0.000    0
+atom        153    P     ">P=O PHOSPHATE"              15    30.994    4
+atom        154    S     ">SO2 SULFONAMIDE"            16    31.972    4
+atom        155    N     "NSP3 SULFONAMIDE"             7    14.003    3
+atom        156    *     "NOT USED"                     0     0.000    0
+atom        157    *     "NOT USED"                     0     0.000    0
+atom        158    *     "NOT USED"                     0     0.000    0
+atom        159    O     "O-P=O PHOSPHATE"              8    15.995    2
+atom        160    C     "C=C NUCLEIC ACID"             6    12.000    3
+atom        161    C     "C=C NUCLEIC ACID"             6    12.000    3
+atom        162    C     "C=O NUCLEIC ACID"             6    12.000    3
+atom        163    Li    "LITHIUM"                      3     6.941    1
+atom        164    N     "NSP3 LI-AMIDE"                7    14.003    3
+
+
+      ################################
+      ##                            ##
+      ##  Van der Waals Parameters  ##
+      ##                            ##
+      ################################
+
+
+vdw           1               2.0400     0.0270
+vdw           2               1.9600     0.0560
+vdw           3               1.9400     0.0560
+vdw           4               1.9400     0.0560
+vdw           5               1.6200     0.0200      0.923
+vdw           6               1.8200     0.0590
+vdw           7               1.8200     0.0590
+vdw           8               1.9300     0.0430
+vdw           9               1.9300     0.0430
+vdw          10               1.9300     0.0430
+vdw          11               1.7100     0.0750
+vdw          12               2.0700     0.2400
+vdw          13               2.2200     0.3200
+vdw          14               2.3600     0.4240
+vdw          15               2.1500     0.2020
+vdw          16               2.1500     0.2020
+vdw          17               2.1500     0.2020
+vdw          18               2.1500     0.2020
+vdw          19               2.2900     0.1400
+vdw          20               0.0000     0.0000
+vdw          21               1.6000     0.0160      0.923
+vdw          22               1.9400     0.0450
+vdw          23               1.6000     0.0180      0.923
+vdw          24               0.9000     0.0150      0.923
+vdw          25               2.2200     0.1680
+vdw          26               2.1500     0.0140
+vdw          27               2.1500     0.0140
+vdw          28               1.6000     0.0150      0.923
+vdw          29               1.9400     0.0300
+vdw          30               1.9400     0.0560
+vdw          31               2.4400     0.2000
+vdw          32               2.5900     0.2700
+vdw          33               2.7400     0.3400
+vdw          34               2.2900     0.2760
+vdw          35               2.4400     0.3680
+vdw          36               1.6170     0.0200      0.923
+vdw          37               1.9300     0.0430
+vdw          38               1.9600     0.0560
+vdw          39               1.9300     0.0430
+vdw          40               1.9300     0.0430
+vdw          41               1.8200     0.0590
+vdw          42               2.1500     0.2020
+vdw          43               1.9300     0.0430
+vdw          44               1.6200     0.0200      0.923
+vdw          45               1.9300     0.0430
+vdw          46               1.9300     0.0430
+vdw          47               1.8200     0.0590
+vdw          48               1.6000     0.0340      0.923
+vdw          49               1.8200     0.0590
+vdw          50               1.9600     0.0560
+vdw          51               1.5300     0.0260
+vdw          52               1.6000     0.0900
+vdw          53               1.9900     0.2680
+vdw          54               2.1500     0.3580
+vdw          55               2.2800     0.4950
+vdw          56               2.0400     0.0270
+vdw          57               1.9600     0.0560
+vdw          58               1.9400     0.0560
+vdw          59               2.2000     0.0150
+vdw          60               2.2000     0.1680
+vdw          61               2.2000     0.0200
+vdw          62               2.2000     0.0200
+vdw          63               2.2000     0.0200
+vdw          64               2.2000     0.0200
+vdw          65               2.2000     0.0200
+vdw          66               2.2000     0.0200
+vdw          67               1.9400     0.0560
+vdw          68               1.9400     0.0560
+vdw          69               1.8200     0.0590
+vdw          70               1.8200     0.0590
+vdw          71               1.9400     0.0560
+vdw          72               1.9300     0.0430
+vdw          73               1.6000     0.0150      0.923
+vdw          74               2.1500     0.2020
+vdw          75               1.8200     0.0590
+vdw          76               1.8200     0.0590
+vdw          77               1.8200     0.0590
+vdw          78               1.8200     0.0590
+vdw          79               1.8200     0.0590
+vdw          80               1.8200     0.0590
+vdw          81               1.8200     0.0590
+vdw          82               1.8200     0.0590
+vdw          83               1.8200     0.0590
+vdw          84               1.8200     0.0590
+vdw          85               1.8200     0.0590
+vdw          86               1.8200     0.0590
+vdw          87               1.8200     0.0590
+vdw          88               1.8200     0.0590
+vdw          89               1.8200     0.0590
+vdw          90               1.8200     0.0590
+vdw          91               1.8200     0.0590
+vdw          92               1.8200     0.0590
+vdw          93               1.8200     0.0590
+vdw          94               1.8200     0.0590
+vdw          95               1.8200     0.0590
+vdw          96               1.8200     0.0590
+vdw          97               1.8200     0.0590
+vdw          98               1.8200     0.0590
+vdw          99               1.8200     0.0590
+vdw         100               1.8200     0.0590
+vdw         101               1.8200     0.0590
+vdw         102               1.8200     0.0590
+vdw         103               1.8200     0.0590
+vdw         104               2.1500     0.2020
+vdw         105               2.1500     0.2020
+vdw         106               1.9400     0.0560
+vdw         107               1.9300     0.0430
+vdw         108               1.9300     0.0430
+vdw         109               1.9300     0.0430
+vdw         110               1.9400     0.0440
+vdw         111               1.9300     0.0430
+vdw         112               0.0000     0.0000
+vdw         113               1.9600     0.0560
+vdw         114               1.9600     0.0560
+vdw         115               1.8200     0.0590
+vdw         116               1.8200     0.0590
+vdw         117               1.8200     0.0590
+vdw         118               1.8200     0.0590
+vdw         119               1.8200     0.0590
+vdw         120               1.8200     0.0590
+vdw         121               1.8200     0.0590
+vdw         122               0.0000     0.0000
+vdw         123               0.0000     0.0000
+vdw         124               1.6200     0.0200      0.923
+vdw         125               2.8100     0.1340
+vdw         126               3.0000     0.1850
+vdw         127               3.0700     0.2330
+vdw         128               2.7800     0.3120
+vdw         129               2.7400     0.3400
+vdw         130               2.7300     0.3490
+vdw         131               2.7300     0.3490
+vdw         132               2.7200     0.3580
+vdw         133               2.7100     0.3650
+vdw         134               2.9400     0.2710
+vdw         135               2.7100     0.3650
+vdw         136               2.7000     0.3720
+vdw         137               2.6900     0.3790
+vdw         138               2.6700     0.3930
+vdw         139               2.6700     0.3930
+vdw         140               2.6700     0.3930
+vdw         141               2.7900     0.2980
+vdw         142               2.6500     0.4070
+vdw         143               1.9300     0.0430
+vdw         144               1.9300     0.0430
+vdw         145               1.8200     0.0590
+vdw         146               1.9300     0.0430
+vdw         147               0.0000     0.0000
+vdw         148               1.8200     0.0600
+vdw         149               1.8200     0.0600
+vdw         150               1.9300     0.0430
+vdw         151               1.9300     0.0430
+vdw         152               0.0000     0.0000
+vdw         153               2.2200     0.1680
+vdw         154               2.1500     0.2020
+vdw         155               1.9300     0.0430
+vdw         159               1.8200     0.0590
+vdw         160               1.9600     0.0560
+vdw         161               1.9600     0.0560
+vdw         162               1.9400     0.0560
+vdw         163               2.5500     0.0070
+vdw         164               1.9300     0.0430

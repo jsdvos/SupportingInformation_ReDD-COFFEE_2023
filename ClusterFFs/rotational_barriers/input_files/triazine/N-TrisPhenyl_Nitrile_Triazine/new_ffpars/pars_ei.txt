@@ -1,0 +1,42 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM     N_C3_C6_16-06-10   0.0000000000   1.1048000000
+FIXQ:ATOM  C_C2N_H2C4_16-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM  C_HC2_HC2N_16-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM   C_HC2_HC3_16-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM     H0_C_C2_16-06-10   0.0000000000   0.7308000000
+FIXQ:ATOM C_C3_H2C2N2_16-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM     H1_C_C2_16-06-10   0.0000000000   0.7308000000
+FIXQ:ATOM              C1_term   0.0000000000   1.1703000000
+FIXQ:ATOM              N2_term   0.0000000000   1.1048000000
+FIXQ:ATOM              C3_term   0.0000000000   1.1703000000
+FIXQ:ATOM              N4_term   0.0000000000   1.1048000000
+FIXQ:ATOM              H4_term   0.0000000000   0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB
+# ----------------------------------------------------
+FIXQ:BOND   C_C2N_H2C4_16-06-10      N_C3_C6_16-06-10   0.0811679599
+FIXQ:BOND   C_C2N_H2C4_16-06-10   C_HC2_HC2N_16-06-10   0.0874181462
+FIXQ:BOND   C_HC2_HC2N_16-06-10    C_HC2_HC3_16-06-10  -0.0092651123
+FIXQ:BOND   C_HC2_HC2N_16-06-10      H0_C_C2_16-06-10  -0.1700590633
+FIXQ:BOND  C_C3_H2C2N2_16-06-10    C_HC2_HC3_16-06-10  -0.0789428538
+FIXQ:BOND    C_HC2_HC3_16-06-10      H1_C_C2_16-06-10  -0.1530530534
+FIXQ:BOND               C1_term  C_C3_H2C2N2_16-06-10  -0.0124942774
+FIXQ:BOND               C1_term               N2_term   0.3353181189
+FIXQ:BOND               C3_term               N2_term   0.2764008688
+FIXQ:BOND               C3_term               N4_term   0.3018189017
+FIXQ:BOND               C3_term               H4_term  -0.0707660658

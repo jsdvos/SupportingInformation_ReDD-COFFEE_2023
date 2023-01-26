@@ -1,0 +1,206 @@
+# Bond stretch
+# ============
+#
+# Mathematical form:
+# E_BONDHARM = 0.5*K*(r - R0)**2
+#
+
+BONDHARM:UNIT K kcalmol/A**2
+BONDHARM:UNIT R0 A
+
+#-------------------------------------------------------------------------------------------
+# KEY         label0                label1                K                R0               
+#-------------------------------------------------------------------------------------------
+BONDHARM:PARS H8_term               C7_term               7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS C_C2Si_H2C5_29-03-09  Si_C4_C8_29-03-09     4.7423640879e+02 1.8390615079e+00 
+BONDHARM:PARS C4_term               C5_term               7.7852342987e+02 1.4610000000e+00 
+BONDHARM:PARS O5_term               C4_term               1.6105167341e+03 1.2194547242e+00 
+BONDHARM:PARS C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C2_term               C3_term               1.0346921343e+03 1.3288329727e+00 
+BONDHARM:PARS H0_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS N1_term               C_C2N_H3C3_29-03-09   1.1566807646e+03 1.4082486608e+00 
+BONDHARM:PARS C3_term               C4_term               7.7374722587e+02 1.4640000000e+00 
+BONDHARM:PARS N1_term               C2_term               1.5388856661e+03 1.2804080617e+00 
+BONDHARM:PARS H2_term               N1_term               1.1025564359e+03 1.0294713791e+00 
+BONDHARM:PARS H3_term               C2_term               7.0896780353e+02 1.0844161478e+00 
+BONDHARM:PARS C5_term               C6_term               9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS H4_term               C3_term               7.0896780353e+02 1.0844161478e+00 
+BONDHARM:PARS C7_term               C6_term               9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C6_term               H7_term               7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS H1_C_C2_29-03-09      C_HC2_HC2N_29-03-09   7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C8_term               C7_term               9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS H9_term               C8_term               7.1488076209e+02 1.0814180403e+00 
+
+
+
+# Angle bend
+# ============
+#
+# Mathematical form:
+# E_BENDCOS = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+BENDCOS:UNIT A kcalmol
+BENDCOS:UNIT PHI0 rad
+
+#-------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                M  A                PHI0             
+#-------------------------------------------------------------------------------------------------------------------
+BENDCOS:PARS O5_term               C4_term               C5_term               3  6.4173930052e+01 0.0000000000e+00 
+BENDCOS:PARS H3_term               C2_term               N1_term               3  3.8554519521e+01 0.0000000000e+00 
+BENDCOS:PARS H1_C_C2_29-03-09      C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS N1_term               C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   3  6.3774797421e+01 0.0000000000e+00 
+BENDCOS:PARS C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H4_term               C3_term               C4_term               3  2.2698094167e+01 0.0000000000e+00 
+BENDCOS:PARS C5_term               C6_term               H7_term               3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C6_term               C5_term               C6_term               3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  Si_C4_C8_29-03-09     3  3.6853882628e+01 0.0000000000e+00 
+BENDCOS:PARS C4_term               C5_term               C6_term               3  4.5267619353e+01 0.0000000000e+00 
+BENDCOS:PARS H3_term               C2_term               C3_term               3  2.7147102912e+01 0.0000000000e+00 
+BENDCOS:PARS C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C5_term               C6_term               C7_term               3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C3_term               C4_term               O5_term               3  6.3943616729e+01 0.0000000000e+00 
+BENDCOS:PARS N1_term               C2_term               C3_term               3  7.7735625462e+01 0.0000000000e+00 
+BENDCOS:PARS H8_term               C7_term               C6_term               3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C2_term               N1_term               C_C2N_H3C3_29-03-09   3  6.4928017178e+01 0.0000000000e+00 
+BENDCOS:PARS C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H4_term               C3_term               C2_term               3  2.7147102912e+01 0.0000000000e+00 
+BENDCOS:PARS C8_term               C7_term               C6_term               3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C7_term               C8_term               C7_term               3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C2_term               C3_term               C4_term               3  4.7519369622e+01 0.0000000000e+00 
+BENDCOS:PARS H2_term               N1_term               C_C2N_H3C3_29-03-09   3  3.1209452958e+01 0.0000000000e+00 
+BENDCOS:PARS H9_term               C8_term               C7_term               3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS H0_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C7_term               C6_term               H7_term               3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C8_term               C7_term               H8_term               3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS H1_C_C2_29-03-09      C_HC2_HC2N_29-03-09   C_HC2_HC2Si_29-03-09  3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C3_term               C4_term               C5_term               3  4.1490601800e+01 0.0000000000e+00 
+BENDCOS:PARS H0_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS H2_term               N1_term               C2_term               3  3.7491776485e+01 0.0000000000e+00 
+
+
+
+# Angle bend
+# ============
+#
+# Mathematical form:
+# E_BENDCHARM = 0.5*K*(cos(phi) - COS0)**2
+#
+
+BENDCHARM:UNIT K kcalmol
+BENDCHARM:UNIT COS0 1
+
+#------------------------------------------------------------------------------------------------------------------
+# KEY          label0                label1                label2                K                COS0             
+#------------------------------------------------------------------------------------------------------------------
+BENDCHARM:PARS C_C2Si_H2C5_29-03-09  Si_C4_C8_29-03-09     C_C2Si_H2C5_29-03-09  1.3445540793e+02 -3.3331324757e-01 
+
+
+
+# Torsion
+# ============
+#
+# Mathematical form:
+# E_TORSION = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+TORSION:UNIT A kcalmol
+TORSION:UNIT PHI0 rad
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                label3                M  A                PHI0             
+#-----------------------------------------------------------------------------------------------------------------------------------------
+TORSION:PARS C7_term               C8_term               C7_term               H8_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H9_term               C8_term               C7_term               C6_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H2_term               N1_term               C2_term               C3_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS H8_term               C7_term               C6_term               C5_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H0_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H2_term               N1_term               C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C4_term               C5_term               C6_term               C7_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H8_term               C7_term               C6_term               H7_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS O5_term               C4_term               C5_term               C6_term               2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C2_term               C3_term               C4_term               O5_term               2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS H4_term               C3_term               C4_term               C5_term               2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   H1_C_C2_29-03-09      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C2_term               N1_term               C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  H0_C_C2_29-03-09      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C4_term               C5_term               C6_term               H7_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H1_C_C2_29-03-09      C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   N1_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C7_term               C8_term               C7_term               C6_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS Si_C4_C8_29-03-09     C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H3_term               C2_term               C3_term               H4_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS C6_term               C5_term               C6_term               H7_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  Si_C4_C8_29-03-09     C_C2Si_H2C5_29-03-09  3  0.0000000000e+00 3.1415926536e+00 
+TORSION:PARS C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N1_term               C2_term               C3_term               H4_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS H3_term               C2_term               C3_term               C4_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H3C3_29-03-09   N1_term               C2_term               C3_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS H9_term               C8_term               C7_term               H8_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C2_term               C3_term               C4_term               C5_term               2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS H2_term               N1_term               C2_term               H3_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS Si_C4_C8_29-03-09     C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  H0_C_C2_29-03-09      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H0_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   H1_C_C2_29-03-09      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H3C3_29-03-09   N1_term               C2_term               H3_term               2  9.7433880369e+00 3.1415926536e+00 
+TORSION:PARS C6_term               C5_term               C6_term               C7_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C8_term               C7_term               C6_term               H7_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   N1_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H1_C_C2_29-03-09      C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C8_term               C7_term               C6_term               C5_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H4_term               C3_term               C4_term               O5_term               2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C3_term               C4_term               C5_term               C6_term               2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS N1_term               C2_term               C3_term               C4_term               2  9.7433880369e+00 3.1415926536e+00 
+
+
+
+# Inversion
+# ============
+#
+# Mathematical form:
+# E_OOPCOS = 0.5*A*(1 - cos(phi))
+#
+
+OOPCOS:UNIT A kcalmol
+
+#--------------------------------------------------------------------------------------------------------------------
+# KEY       label0                label1                label2                label3                A                
+#--------------------------------------------------------------------------------------------------------------------
+OOPCOS:PARS C_C2Si_H2C5_29-03-09  H0_C_C2_29-03-09      C_HC2_HC2N_29-03-09   C_HC2_HC2Si_29-03-09  2.0000000000e+00 
+OOPCOS:PARS H8_term               C8_term               C6_term               C7_term               2.0000000000e+00 
+OOPCOS:PARS N1_term               C_HC2_HC2N_29-03-09   C_HC2_HC2N_29-03-09   C_C2N_H3C3_29-03-09   2.0000000000e+00 
+OOPCOS:PARS C5_term               O5_term               C3_term               C4_term               1.6000000000e+01 
+OOPCOS:PARS C3_term               N1_term               H3_term               C2_term               2.0000000000e+00 
+OOPCOS:PARS C4_term               C6_term               C6_term               C5_term               2.0000000000e+00 
+OOPCOS:PARS C_HC2_HC2Si_29-03-09  C_C2N_H3C3_29-03-09   H1_C_C2_29-03-09      C_HC2_HC2N_29-03-09   2.0000000000e+00 
+OOPCOS:PARS C6_term               C6_term               C4_term               C5_term               2.0000000000e+00 
+OOPCOS:PARS H4_term               C4_term               C2_term               C3_term               2.0000000000e+00 
+OOPCOS:PARS H2_term               C2_term               C_C2N_H3C3_29-03-09   N1_term               2.0000000000e+00 
+OOPCOS:PARS C_HC2_HC2N_29-03-09   C_HC2_HC2N_29-03-09   N1_term               C_C2N_H3C3_29-03-09   2.0000000000e+00 
+OOPCOS:PARS H7_term               C7_term               C5_term               C6_term               2.0000000000e+00 
+OOPCOS:PARS C2_term               H4_term               C4_term               C3_term               2.0000000000e+00 
+OOPCOS:PARS H3_term               C3_term               N1_term               C2_term               2.0000000000e+00 
+OOPCOS:PARS C_C2N_H3C3_29-03-09   H1_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  C_HC2_HC2N_29-03-09   2.0000000000e+00 
+OOPCOS:PARS Si_C4_C8_29-03-09     C_HC2_HC2Si_29-03-09  C_HC2_HC2Si_29-03-09  C_C2Si_H2C5_29-03-09  2.0000000000e+00 
+OOPCOS:PARS C6_term               H8_term               C8_term               C7_term               2.0000000000e+00 
+OOPCOS:PARS N1_term               H3_term               C3_term               C2_term               2.0000000000e+00 
+OOPCOS:PARS C7_term               C7_term               H9_term               C8_term               2.0000000000e+00 
+OOPCOS:PARS C3_term               C5_term               O5_term               C4_term               1.6000000000e+01 
+OOPCOS:PARS O5_term               C3_term               C5_term               C4_term               1.6000000000e+01 
+OOPCOS:PARS C7_term               C5_term               H7_term               C6_term               2.0000000000e+00 
+OOPCOS:PARS C4_term               C2_term               H4_term               C3_term               2.0000000000e+00 
+OOPCOS:PARS C8_term               C6_term               H8_term               C7_term               2.0000000000e+00 
+OOPCOS:PARS C2_term               C_C2N_H3C3_29-03-09   H2_term               N1_term               2.0000000000e+00 
+OOPCOS:PARS C_HC2_HC2N_29-03-09   C_C2Si_H2C5_29-03-09  H0_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  2.0000000000e+00 
+OOPCOS:PARS C_C2N_H3C3_29-03-09   H2_term               C2_term               N1_term               2.0000000000e+00 
+OOPCOS:PARS H1_C_C2_29-03-09      C_HC2_HC2Si_29-03-09  C_C2N_H3C3_29-03-09   C_HC2_HC2N_29-03-09   2.0000000000e+00 
+OOPCOS:PARS C_HC2_HC2Si_29-03-09  C_HC2_HC2Si_29-03-09  Si_C4_C8_29-03-09     C_C2Si_H2C5_29-03-09  2.0000000000e+00 
+OOPCOS:PARS C7_term               H9_term               C7_term               C8_term               2.0000000000e+00 
+OOPCOS:PARS H0_C_C2_29-03-09      C_HC2_HC2N_29-03-09   C_C2Si_H2C5_29-03-09  C_HC2_HC2Si_29-03-09  2.0000000000e+00 
+OOPCOS:PARS C5_term               H7_term               C7_term               C6_term               2.0000000000e+00 
+
+
+

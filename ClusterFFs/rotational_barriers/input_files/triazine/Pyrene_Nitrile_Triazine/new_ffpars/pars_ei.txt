@@ -1,0 +1,44 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM C_C3_H2C2N2_04-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM    C_HC2_C4_04-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM   C_C3_H2C4_04-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM     C_C3_C6_04-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM     H0_C_C2_04-06-10   0.0000000000   0.7308000000
+FIXQ:ATOM   C_HC2_HC3_04-06-10   0.0000000000   1.1703000000
+FIXQ:ATOM     H1_C_C2_04-06-10   0.0000000000   0.7308000000
+FIXQ:ATOM              C1_term   0.0000000000   1.1703000000
+FIXQ:ATOM              N2_term   0.0000000000   1.1048000000
+FIXQ:ATOM              C3_term   0.0000000000   1.1703000000
+FIXQ:ATOM              N4_term   0.0000000000   1.1048000000
+FIXQ:ATOM              H4_term   0.0000000000   0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB
+# ----------------------------------------------------
+FIXQ:BOND  C_C3_H2C2N2_04-06-10     C_HC2_C4_04-06-10  -0.0533264377
+FIXQ:BOND    C_C3_H2C4_04-06-10     C_HC2_C4_04-06-10   0.0488292107
+FIXQ:BOND      C_C3_C6_04-06-10    C_C3_H2C4_04-06-10   0.0095523342
+FIXQ:BOND     C_HC2_C4_04-06-10      H0_C_C2_04-06-10  -0.1581924978
+FIXQ:BOND      C_C3_C6_04-06-10      C_C3_C6_04-06-10   0.0000644011
+FIXQ:BOND    C_C3_H2C4_04-06-10    C_HC2_HC3_04-06-10   0.0266656682
+FIXQ:BOND    C_HC2_HC3_04-06-10    C_HC2_HC3_04-06-10   0.0000802205
+FIXQ:BOND    C_HC2_HC3_04-06-10      H1_C_C2_04-06-10  -0.1449925005
+FIXQ:BOND               C1_term  C_C3_H2C2N2_04-06-10   0.0021665429
+FIXQ:BOND               C1_term               N2_term   0.3283709369
+FIXQ:BOND               C3_term               N2_term   0.2781495323
+FIXQ:BOND               C3_term               N4_term   0.2991953147
+FIXQ:BOND               C3_term               H4_term  -0.0717807554

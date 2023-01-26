@@ -1,0 +1,40 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM C_C2N_12-07-11  0.0000000000  1.1703000000
+FIXQ:ATOM C_C2O_12-07-11  0.0000000000  1.1703000000
+FIXQ:ATOM O_HC_12-07-11  0.0000000000  1.1325000000
+FIXQ:ATOM H_O_12-07-11  0.0000000000  0.7308000000
+FIXQ:ATOM  N1_term  0.0000000000  1.1048000000
+FIXQ:ATOM  B2_term  0.0000000000  1.2020000000
+FIXQ:ATOM  H3_term  0.0000000000  0.7308000000
+FIXQ:ATOM  N3_term  0.0000000000  1.1048000000
+FIXQ:ATOM  B4_term  0.0000000000  1.2020000000
+FIXQ:ATOM  H4_term  0.0000000000  0.7308000000
+FIXQ:ATOM  H5_term  0.0000000000  0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB          
+# ----------------------------------------------------
+FIXQ:BOND  C_C2N_12-07-11  C_C2O_12-07-11  -0.0725750830
+FIXQ:BOND  C_C2O_12-07-11  O_HC_12-07-11   0.0938499627
+FIXQ:BOND  H_O_12-07-11  O_HC_12-07-11   0.4502180872
+FIXQ:BOND  C_C2N_12-07-11   N1_term   0.1298242366
+FIXQ:BOND   B2_term   N1_term   0.3003790343
+FIXQ:BOND   B2_term   H3_term   0.2241954860
+FIXQ:BOND   B2_term   N3_term   0.3159930252
+FIXQ:BOND   B4_term   N3_term   0.3275967437
+FIXQ:BOND   H4_term   N3_term   0.4080419580
+FIXQ:BOND   B4_term   H5_term   0.2477147086
