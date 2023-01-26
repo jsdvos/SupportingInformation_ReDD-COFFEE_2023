@@ -1,9 +1,11 @@
 This file relates to the research done in the following paper:
 
-J. S. De Vos, S. Borgmans, P. Van Der Voort, S. M. J. Rogge, V. Van Speybroeck, _xxxx_, 2023, XX, XX, XXXX
-https://doi.org/XXX
+J. S. De Vos, S. Borgmans, P. Van Der Voort, S. M. J. Rogge, V. Van Speybroeck, _ReDD-COFFEE: A ready-to-use database of covalent organic framework structures and accurate force fields to enable high-throughput screenings_ (2023)
 
-This file is part of the longterm storage (publically available under the [CC BY-SA license](https://creativecommons.org/licenses/by-sa/4.0/)) of the input files relevant in this work. In the remainder of this file, we outline in detail the workflow used in this work including references to the relevant input and output files.
+For the structures and force fields of the ReDD-COFFEE database, which are not included in this storage, we refer to its landing page on the Materials Cloud:
+https://doi.org/doi.org/10.24435/materialscloud:nw-3j
+
+This file is part of the midterm storage (publically available under the [CC BY-SA license](https://creativecommons.org/licenses/by-sa/4.0/)) of the input files relevant in this work. In the remainder of this file, we outline in detail the workflow used in this work including references to the relevant input and output files.
 
 # Software
 The following software packages are used to perform all relevant calculations.
@@ -128,9 +130,19 @@ As specified in the `config_quickff.txt` file, QuickFF will also generate the `t
 The procedures outlined in Step 1a _(ii)_ and Step 1a _(iii)_ are automatically performed by a single bash script, `derive_ff.sh` for convenience.
 
 ### Step 1b - Additional force field terms
-The cluster force fields, and in turn the derived periodic force field, can give rise to significant deviations between the *ab initio* cluster model and the optimal force field geometry. When considering the rotation of the triazine ring in the SBUs involved in a triazine linkage, it was deemed appropriate to add an additional term. To this end, an *ab inito* rotation scan was performed to fit his additional term, replacing the original torsion term. This procedure is outlined in the `ClusterFFs/rotational_barriers/rotational_barrier_redd-coffee.ipynb` file, using a pyiron workflow (https://pyiron.org/).
 
-SEE SANDER
+The cluster force fields, and in turn the derived periodic force field, can give rise to significant deviations between the *ab initio* cluster model and the optimal force field geometry. When considering the rotation of the triazine ring in the SBUs involved in a triazine linkage, it was deemed appropriate to add an additional term. To this end, an *ab inito* rotation scan was performed to fit this additional term, replacing the original torsion term. This procedure is outlined in the `ClusterFFs/rotational_barriers/rotational_barrier_redd-coffee.ipynb` file, using a pyiron workflow (https://pyiron.org/). Clear stepwise instructions are evident from the sequential notebook headers, and, in essence, results in the following input/output:
+
+**input**
+`SBU_freq.fchk`, `SBU_freq.chk`, `system.chk`, `ffpars/pars_*.txt`
+
+**command line**
+see notebook
+
+**output**
+`fits/`, `polysix/pars_polysix.txt`, `new_ffpars/pars_*.txt`
+
+The input `*.chk` structures serve as the reference ab initio geometry and force field geometry, where the latter also contains the relevant atom types. As output, the notebook provides illustrations of the rotational barrier fitting, showcasing the behaviour of the old force field, versus the new force field. Additionally, the new torsion term is printed separately in `polysix/pars_polysix.txt`, and the new force field is also provided in full under `new_ffpars/pars_*.txt`, where the faulty dihedral term was replaced by the newly fitted term. 
 
 ### Step 1c - UFF cluster force fields
 
@@ -213,7 +225,11 @@ All machinery to construct an initial periodic structure from a `Topology` and a
 - `Database.py`
 This module supports the construction of a `Database`. Several methods are implemented to do the initial enumeration of (topology, SBUs) combinations, adopt the filters provided in the manuscript and electronic supplementary information, and provide the remaining combinations to the `Construct.py` module.
 
-The `build_database.py`  script allows to reconstruct the initial structures of the database. First, all 5 537 951 initial combinations are enlisted and their rescaling factor, rescaling standard deviation, and largest root-mean-square deviation is calculated. These properties are stored in the `database_resc_rmsd.txt` file. Once the first two filters are applied, the number of atoms and the initial unit cell volume is calculated for the remaining 403 581 combinations. Finally, the initial structure of the remaining 347 055 combinations are generated.
+The `build_database.py`  script allows to reconstruct the initial structures of the database. First, all 5 537 951 initial combinations are enlisted and their rescaling factor, rescaling standard deviation, and largest root-mean-square deviation is calculated. These properties are stored in the `database_resc_rmsd.txt` file. This file can be restored by running:
+
+`cat database_resc_rmsd.txt.tar.gz.* | tar xvzf -`
+
+Once the first two filters are applied, the number of atoms and the initial unit cell volume is calculated for the remaining 403 581 combinations. Finally, the initial structure of the remaining 347 055 combinations are generated.
 
 ### Step 2b: Structure optimization
 
@@ -247,7 +263,10 @@ Zeo++ is used to calculate the structural parameters that define the pore geomet
 `network -res struct.res -sa 1.84 1.84 3000 struct.sa -vol 1.84 1.84 3000 struct.vol struct.cif`
 `cat struct.res struct.sa struct.vol > struct.geo`
 
-The calculation of the RACs is implemented in the `racs.py` script. For each structure, a `struct.rac` file is generated specifying the number of identified linkages in the structure, as well as the RACs for each of the three chemical environments. Finally, by running `python collect_data.py`, the features of the pore geometry and the RACs for all domains are extracted and stored in the `features.csv` file.
+The calculation of the RACs is implemented in the `racs.py` script. For each structure, a `struct.rac` file is generated specifying the number of identified linkages in the structure, as well as the RACs for each of the three chemical environments. Finally, by running `python collect_data.py`, the features of the pore geometry and the RACs for all domains are extracted and stored in the `features.csv` file. This file can be restored by running 
+
+`cat features.csv.tar.gz.* | tar xvzf -`
+
 
 #### 2) Subset selection
 
@@ -286,7 +305,18 @@ Besides these input files, that depend on the studied structure, also the `ch4.d
 
 ### Benchmark 1: Validation of the periodic force fields
 
-SEE SANDER
+In first instance, the periodic force field is validated by benchmarking its capacity to reproduce the experimental powder X-ray diffraction (PXRD) pattern. This procedure is described in the `Benchmarks/PeriodicFFValidation/PXRD_redd-coffee.ipynb` file, using a pyiron workflow (https://pyiron.org/). Similar to the previous notebook, the headers in this file delineate the sequential steps in this workflow. 
+
+**input**
+`system.chk`, `pars_cluster.txt`, `pars_uff.txt`, `material.dat`
+
+**command line**
+see notebook
+
+**output**
+`static/` , `static_bg/`, `dynamic/`, `dynamic_bg/`
+
+Starting from the system definition, and the experimental diffraction pattern, the notebook facilitates static and dynamic force field simulations, after which the corresponding PXRD pattern is calculated. Afterward, the PXRD pattern is compared to the experimental one, and the heuristic values pertaining to their similarity/difference are calculated. Aside from the original experimental pattern, the notebook also attempts to remove the background noise, and repeats the heuristic analysis, usually leading to a better agreement.
 
 ### Benchmark 2: Force field arguments
 
