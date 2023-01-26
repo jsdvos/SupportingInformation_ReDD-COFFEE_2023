@@ -1,0 +1,17 @@
+lon-b 4 8
+# a	b	c	alpha	beta	gamma
+1.633	1.633	2.6667	90.0	90.0	120.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.3333	0.6667	0.0	XXX
+  A2	4	0.6667	0.3333	0.5	XXX
+  B1	4	0.6667	0.3333	0.125	XXX
+  B2	4	0.3333	0.6667	0.625	XXX
+# E	N1	N2
+  _A1	A100+	B2
+  _A2	A2	B1
+  _B1	A10-0	B1
+  _B2	A1	B1-00
+  _B3	A1	B1
+  _B4	A2	B20-0
+  _B5	A2-00	B2
+  _B6	A2	B2

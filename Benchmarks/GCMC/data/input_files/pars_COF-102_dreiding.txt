@@ -1,0 +1,73 @@
+# Electrostatic interactions
+# ==========================
+#
+# Mathematical form:
+# E_FIXQ = q_i*q_j/r*erf(r/R)
+#
+#       with q_i = q_0i + sum(p_ij, j bonded to i)
+#
+# The total atomic point charge is given by the sum of the
+# pre-charge (q_0i) and the bond charge increments (p_ij).
+# The error function is included to allow the charge to be
+# distributed according to a Gaussian distribution. By
+# putting the charge radius R to zero, the classic point
+# charge expression is obtained.
+#
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+
+FIXQ:DIELECTRIC 1.0
+
+# Pre-charges (Q0) and charge radii (R)
+#-------------------------------------------------------------------
+# KEY     label0                 Q0                R
+#-------------------------------------------------------------------
+FIXQ:ATOM O_33-11-02             0.0000000000e+00  1.1325000000e+00
+FIXQ:ATOM B_33-11-02             0.0000000000e+00  1.2020000000e+00
+FIXQ:ATOM C_C4_C8_28-01-02       0.0000000000e+00  1.1703000000e+00
+FIXQ:ATOM C_BC2_H2C2O2_28-01-02  0.0000000000e+00  1.1703000000e+00
+FIXQ:ATOM C_HC2_HBC2_28-01-02    0.0000000000e+00  1.1703000000e+00
+FIXQ:ATOM C_HC2_HC3_28-01-02     0.0000000000e+00  1.1703000000e+00
+FIXQ:ATOM C_C3_H2C5_28-01-02     0.0000000000e+00  1.1703000000e+00
+FIXQ:ATOM H1_C_C2_28-01-02       0.0000000000e+00  7.3080000000e-01
+FIXQ:ATOM H0_C_C2_28-01-02       0.0000000000e+00  7.3080000000e-01
+
+# Bond charge increments (P)
+#-----------------------------------------------------------------------
+# KEY     label0                label1                 P
+#-----------------------------------------------------------------------
+FIXQ:BOND B_33-11-02            O_33-11-02             3.9760506620e-01
+FIXQ:BOND C_BC2_H2C2O2_28-01-02 C_HC2_HBC2_28-01-02   -1.1734014120e-01
+FIXQ:BOND C_HC2_HBC2_28-01-02   C_HC2_HC3_28-01-02     1.9382887300e-02
+FIXQ:BOND C_C3_H2C5_28-01-02    C_C4_C8_28-01-02       1.7846552800e-02
+FIXQ:BOND C_C3_H2C5_28-01-02    C_HC2_HC3_28-01-02     5.3390539400e-02
+FIXQ:BOND C_HC2_HBC2_28-01-02   H1_C_C2_28-01-02      -1.2681014660e-01
+FIXQ:BOND C_HC2_HC3_28-01-02    H0_C_C2_28-01-02      -1.5984549830e-01
+FIXQ:BOND B_33-11-02            C_BC2_H2C2O2_28-01-02  2.7096092850e-01
+
+
+LJ:SCALE 1 0.0
+LJ:SCALE 2 0.0
+LJ:SCALE 3 1.0
+
+LJ:PARS O_33-11-02 3.0332 0.0957
+LJ:PARS B_33-11-02 3.5814 0.0950
+LJ:PARS C_C4_C8_28-01-02 3.4730 0.0951
+LJ:PARS C_BC2_H2C2O2_28-01-02 3.4730 0.0951
+LJ:PARS C_HC2_HBC2_28-01-02 3.4730 0.0951
+LJ:PARS C_HC2_HC3_28-01-02 3.4730 0.0951
+LJ:PARS C_C3_H2C5_28-01-02 3.4730 0.0951
+LJ:PARS H1_C_C2_28-01-02 2.8464 0.0152
+LJ:PARS H0_C_C2_28-01-02 2.8464 0.0152
+
+LJ:UNIT SIGMA A
+LJ:UNIT EPSILON kcalmol
+
+
+

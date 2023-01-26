@@ -1,0 +1,29 @@
+lfm 8 16
+# a	b	c	alpha	beta	gamma
+2.0	1.8363	4.2566	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.25	0.25	0.75	XXX
+  A2	4	0.75	0.25	0.75	XXX
+  A3	4	0.75	0.75	0.25	XXX
+  A4	4	0.25	0.75	0.25	XXX
+  B1	4	0.0	0.25	0.5465	XXX
+  B2	4	0.0	0.75	0.4535	XXX
+  B3	4	0.5	0.75	0.0465	XXX
+  B4	4	0.5	0.25	0.9535	XXX
+# E	N1	N2
+  _A1	A1	A2
+  _A2	A3	A4
+  _A3	A3-00	A4
+  _A4	A1	A2-00
+  _B1	A1	B1
+  _B2	A2	B1+00
+  _B3	A3	B2+00
+  _B4	A4	B2
+  _B5	A3	B3
+  _B6	A4	B3
+  _B7	A1	B4
+  _B8	A2	B4
+  _C1	B1	B2
+  _C2	B1	B20-0
+  _C3	B30-0	B400-
+  _C4	B3	B400-

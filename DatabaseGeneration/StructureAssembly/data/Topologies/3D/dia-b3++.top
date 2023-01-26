@@ -1,0 +1,17 @@
+dia-b3++ 4 8
+# a	b	c	alpha	beta	gamma
+1.633	1.633	2.3092	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.0	0.0	XXX
+  B1	4	0.5	0.5	0.5	XXX
+  C1	4	0.5	0.0	0.25	XXX
+  C2	4	0.0	0.5	0.75	XXX
+# E	N1	N2
+  _A1	B1	C2+00
+  _A2	B1	C2
+  _A3	B1	C1
+  _A4	B1	C10+0
+  _B1	A10++	C2
+  _B2	A100+	C2
+  _B3	A1+00	C1
+  _B4	A1	C1

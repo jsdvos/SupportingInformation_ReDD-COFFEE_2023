@@ -1,0 +1,41 @@
+ths-e 12 24
+# a	b	c	alpha	beta	gamma
+2.0	2.0	6.9282	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.75	0.125	XXX
+  A2	4	0.5	0.25	0.625	XXX
+  A3	4	0.5	0.75	0.375	XXX
+  A4	4	0.0	0.25	0.875	XXX
+  B1	4	0.0	0.0	0.0	XXX
+  B2	4	0.5	0.0	0.5	XXX
+  B3	4	0.25	0.75	0.25	XXX
+  B4	4	0.25	0.25	0.75	XXX
+  B5	4	0.75	0.25	0.75	XXX
+  B6	4	0.75	0.75	0.25	XXX
+  B7	4	0.5	0.5	0.5	XXX
+  B8	4	0.0	0.5	0.0	XXX
+# E	N1	N2
+  _A1	A1	B10+0
+  _A2	A2	B2
+  _A3	A3	B3
+  _A4	A4	B4
+  _A5	A3	B20+0
+  _A6	A4	B100+
+  _A7	A1	B3
+  _A8	A2	B4
+  _A9	A2	B5
+  _A10	A1+00	B6
+  _A11	A4+00	B5
+  _A12	A3	B6
+  _A13	A2	B7
+  _A14	A1	B8
+  _A15	A4	B800+
+  _A16	A3	B7
+  _B1	B1	B8
+  _B2	B20+0	B7
+  _B3	B3	B6-00
+  _B4	B4	B5
+  _B5	B2	B7
+  _B6	B10+0	B8
+  _B7	B3	B6
+  _B8	B4	B5-00

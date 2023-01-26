@@ -1,0 +1,35 @@
+krs 10 20
+# a	b	c	alpha	beta	gamma
+2.0	5.4641	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.0	0.0	XXX
+  A2	4	0.5	0.5	0.0	XXX
+  B1	4	0.25	0.1585	0.0	XXX
+  B2	4	0.75	0.8415	0.0	XXX
+  B3	4	0.75	0.1585	0.0	XXX
+  B4	4	0.25	0.8415	0.0	XXX
+  B5	4	0.75	0.6585	0.0	XXX
+  B6	4	0.25	0.3415	0.0	XXX
+  B7	4	0.25	0.6585	0.0	XXX
+  B8	4	0.75	0.3415	0.0	XXX
+# E	N1	N2
+  _A1	A1	B1
+  _A2	A1++0	B2
+  _A3	A1+00	B3
+  _A4	A10+0	B4
+  _A5	A2	B5
+  _A6	A2	B6
+  _A7	A2	B7
+  _A8	A2	B8
+  _B1	B1	B3-00
+  _B2	B2-00	B4
+  _B3	B5	B7
+  _B4	B6	B8
+  _C1	B1	B3
+  _C2	B2	B4
+  _C3	B5-00	B7
+  _C4	B6	B8-00
+  _D1	B1	B6
+  _D2	B2	B5
+  _D3	B3	B8
+  _D4	B4	B7

@@ -1,0 +1,204 @@
+# Bond stretch
+# ============
+#
+# Mathematical form:
+# E_BONDHARM = 0.5*K*(r - R0)**2
+#
+
+BONDHARM:UNIT  K kjmol/A**2
+BONDHARM:UNIT  R0 A
+
+#---------------------------------------------------------------------------------------------
+# KEY         label0                label1                 K                 R0               
+#---------------------------------------------------------------------------------------------
+BONDHARM:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06      3.8950408570e+03  1.3978882550e+00 
+BONDHARM:PARS C_HC2_C4_11-02-06     H_C_C2_11-02-06        3.3541487947e+03  1.0843229106e+00 
+BONDHARM:PARS C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06     3.2022367321e+03  1.4629325721e+00 
+BONDHARM:PARS C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06      6.1318916127e+03  1.2862372142e+00 
+BONDHARM:PARS C_HCN_C2N_11-02-06    H_C_CN_11-02-06        3.1313499193e+03  1.0918492160e+00 
+BONDHARM:PARS N_CN_HC2_11-02-06     N_CN_HC2_11-02-06      3.0896728828e+03  1.3896741093e+00 
+
+
+
+# Angle bend
+# ==========
+#
+# Mathematical form:
+# E_BENDAHARM = 0.5*K*(theta - THETA0)**2
+#
+
+BENDAHARM:UNIT  K kjmol/rad**2
+BENDAHARM:UNIT  THETA0 deg
+
+#--------------------------------------------------------------------------------------------------------------------
+# KEY          label0                label1                label2                 K                 THETA0           
+#--------------------------------------------------------------------------------------------------------------------
+BENDAHARM:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06      6.0798023700e+02  1.1941411581e+02 
+BENDAHARM:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06     4.8088478859e+02  1.1991489808e+02 
+BENDAHARM:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     H_C_C2_11-02-06        2.7736635714e+02  1.1916594343e+02 
+BENDAHARM:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06    4.9922421731e+02  1.2084743119e+02 
+BENDAHARM:PARS C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06      6.2961595525e+02  1.2164109613e+02 
+BENDAHARM:PARS C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    H_C_CN_11-02-06        2.8642661487e+02  1.1727001613e+02 
+BENDAHARM:PARS H_C_CN_11-02-06       C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06      3.1610772844e+02  1.2105974441e+02 
+BENDAHARM:PARS C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06     N_CN_HC2_11-02-06      1.0322994404e+03  1.1268959237e+02 
+
+
+
+# Torsion
+# =======
+#
+# Mathematical form:
+# E_TORSION = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+TORSION:UNIT  A kjmol
+TORSION:UNIT  PHI0 deg
+TORSION:UNIT  A kjmol
+TORSION:UNIT  PHI0 deg
+
+#-------------------------------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                label3                M   A                 PHI0             
+#-------------------------------------------------------------------------------------------------------------------------------------------
+TORSION:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     H_C_C2_11-02-06       2   2.8706522623e+01  0.0000000000e+00 
+TORSION:PARS C_HCN_C2N_11-02-06    C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     H_C_C2_11-02-06       2   2.0862418344e+01  0.0000000000e+00 
+TORSION:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     2   3.0346203034e+01  0.0000000000e+00 
+TORSION:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    2   4.3519209527e+01  0.0000000000e+00 
+TORSION:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06     2   6.6853744167e+00  0.0000000000e+00 
+TORSION:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    H_C_CN_11-02-06       2   9.7379319964e+00  0.0000000000e+00 
+TORSION:PARS C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06     N_CN_HC2_11-02-06     C_HCN_C2N_11-02-06    1   9.3227139684e+01  1.8000000000e+02 
+TORSION:PARS C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06     N_CN_HC2_11-02-06     2   8.8521527004e+01  0.0000000000e+00 
+TORSION:PARS H_C_CN_11-02-06       C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06     N_CN_HC2_11-02-06     2   6.1847122658e+01  0.0000000000e+00 
+
+
+
+# Inversion
+# =========
+#
+# Mathematical form:
+# E_OOPDIST = 0.5*K*(d - D0)**2
+#
+
+OOPDIST:UNIT  K kjmol/A**2
+OOPDIST:UNIT  D0 A
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                label3                 K                 D0               
+#----------------------------------------------------------------------------------------------------------------------------------------
+OOPDIST:PARS C_HC2_C4_11-02-06     C_HC2_C4_11-02-06     C_HCN_C2N_11-02-06    C_C3_H3C2N_11-02-06    1.7714840988e+02  7.2913746242e-06 
+OOPDIST:PARS C_C3_H3C2N_11-02-06   C_C3_H3C2N_11-02-06   H_C_C2_11-02-06       C_HC2_C4_11-02-06      1.7163246216e+02  1.4750987656e-05 
+OOPDIST:PARS C_C3_H3C2N_11-02-06   H_C_CN_11-02-06       N_CN_HC2_11-02-06     C_HCN_C2N_11-02-06     4.4359239589e+02  3.7046536387e-07 
+
+
+
+# Cross terms
+# ===========
+#
+# Mathematical form:
+# E_CROSS = KSS * (r0-R0) * (r1-R1)
+#           + KBS0 * (r0 - R0) * (theta - THETA0)
+#           + KBS1 * (r1 - R1) * (theta - THETA0)
+#
+
+CROSS:UNIT  KSS kjmol/angstrom**2
+CROSS:UNIT  KBS0 kjmol/(angstrom*rad)
+CROSS:UNIT  KBS1 kjmol/(angstrom*rad)
+CROSS:UNIT  R0 angstrom
+CROSS:UNIT  R1 angstrom
+CROSS:UNIT  THETA0 deg
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# KEY      label0                label1                label2                 KSS               KBS0              KBS1              R0                R1                THETA0           
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CROSS:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06      5.6155324198e+02  3.5227559267e+01  3.5227559267e+01  1.3978882550e+00  1.3978882550e+00  1.1941411581e+02 
+CROSS:PARS C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06     3.6873539660e+02  1.2563733801e+02  2.2463319801e+02  1.3978882550e+00  1.4629325721e+00  1.1991489808e+02 
+CROSS:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     H_C_C2_11-02-06        4.7914910810e+01  7.5062594548e+01  1.2403429086e+02  1.3978882550e+00  1.0843229106e+00  1.1916594343e+02 
+CROSS:PARS C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     C_C3_H3C2N_11-02-06    5.3437576273e+02  4.7868643531e+01  4.7868643531e+01  1.3978882550e+00  1.3978882550e+00  1.2084743119e+02 
+CROSS:PARS C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06      5.2344825640e+02  1.8615471719e+02  1.8056062005e+02  1.4629325721e+00  1.2862372142e+00  1.2164109613e+02 
+CROSS:PARS C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06    H_C_CN_11-02-06        3.8111793856e+01  6.8561867855e+01  1.4816329790e+02  1.4629325721e+00  1.0918492160e+00  1.1727001613e+02 
+CROSS:PARS H_C_CN_11-02-06       C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06      1.5244459963e+02  1.4195505754e+02  1.8630365394e+02  1.0918492160e+00  1.2862372142e+00  1.2105974441e+02 
+CROSS:PARS C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06     N_CN_HC2_11-02-06      6.1146341462e+02  5.0129707718e+02  4.9001860536e+02  1.2865679518e+00  1.3896741093e+00  1.1268959237e+02 
+
+
+
+# Electrostatic interactions
+# ==========================
+#
+# Mathematical form:
+# E_FIXQ = q_i*q_j/r*erf(r/R)
+#
+#       with q_i = q_0i + sum(p_ij, j bonded to i)
+# 
+# The total atomic point charge is given by the sum of the 
+# pre-charge (q_0i) and the bond charge increments (p_ij).
+# The error function is included to allow the charge to be 
+# distributed according to a Gaussian distribution. By
+# putting the charge radius R to zero, the classic point
+# charge expression is obtained.
+#
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+
+FIXQ:DIELECTRIC 1.0
+
+# Pre-charges (Q0) and charge radii (R)
+#-------------------------------------------------------------------
+# KEY     label0                 Q0                R                
+#-------------------------------------------------------------------
+FIXQ:ATOM C_C3_H3C2N_11-02-06    0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM C_HC2_C4_11-02-06      0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM H_C_C2_11-02-06        0.0000000000e+00  7.3080000000e-01 
+FIXQ:ATOM C_HCN_C2N_11-02-06     0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM N_CN_HC2_11-02-06      0.0000000000e+00  1.1048000000e+00 
+FIXQ:ATOM H_C_CN_11-02-06        0.0000000000e+00  7.3080000000e-01 
+
+# Bond charge increments (P)
+#-----------------------------------------------------------------------
+# KEY     label0                label1                 P                
+#-----------------------------------------------------------------------
+FIXQ:BOND C_C3_H3C2N_11-02-06   C_HC2_C4_11-02-06     -1.2812147700e-02 
+FIXQ:BOND C_HC2_C4_11-02-06     H_C_C2_11-02-06       -1.4769891380e-01 
+FIXQ:BOND C_C3_H3C2N_11-02-06   C_HCN_C2N_11-02-06     1.4315888700e-02 
+FIXQ:BOND C_HCN_C2N_11-02-06    N_CN_HC2_11-02-06      2.7777256490e-01 
+FIXQ:BOND C_HCN_C2N_11-02-06    H_C_CN_11-02-06       -9.1862155700e-02 
+FIXQ:BOND N_CN_HC2_11-02-06     N_CN_HC2_11-02-06      0.0000000000e+00 
+
+
+
+# MM3 variant of the Lennard-Jones potential
+# ==========================================
+#
+# Mathematical form:
+# E_MM3 = epsilon*(1.84e5 * exp(sigma/r) - 2.25*(sigma/r)**6)
+#
+#        with sigma    =  (sigma_i + sigma_j)/2
+#             epsilon  =  sqrt(epsilon_i * epsilon_j)
+#
+# The ONLYPAULI parameter corresponds to an undocumented
+# feature. Put it to 0 to get the original MM3 form.
+#
+
+MM3:UNIT SIGMA angstrom
+MM3:UNIT EPSILON kcalmol
+
+MM3:SCALE 1 0.0
+MM3:SCALE 2 0.0
+MM3:SCALE 3 1.0
+
+#---------------------------------------------------------------------
+# KEY    label0                 SIGMA             EPSILON          ONLYPAULI 
+#---------------------------------------------------------------------
+MM3:PARS C_C3_H3C2N_11-02-06    1.9600000000e+00  5.6000000000e-02 0  
+MM3:PARS C_HC2_C4_11-02-06      1.9600000000e+00  5.6000000000e-02 0  
+MM3:PARS H_C_C2_11-02-06        1.6200000000e+00  2.0000000000e-02 0  
+MM3:PARS C_HCN_C2N_11-02-06     1.9600000000e+00  5.6000000000e-02 0  
+MM3:PARS N_CN_HC2_11-02-06      1.9300000000e+00  4.3000000000e-02 0  
+MM3:PARS H_C_CN_11-02-06        1.6200000000e+00  2.0000000000e-02 0  
+
+
+

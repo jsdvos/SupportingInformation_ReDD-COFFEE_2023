@@ -1,0 +1,17 @@
+unc 4 8
+# a	b	c	alpha	beta	gamma
+1.9949	1.9949	1.4679	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.3297	0.0	XXX
+  A2	4	0.0	0.6703	0.5	XXX
+  A3	4	0.6703	0.0	0.25	XXX
+  A4	4	0.3297	0.0	0.75	XXX
+# E	N1	N2
+  _A1	A1	A2
+  _A2	A100+	A2
+  _A3	A3	A4
+  _A4	A3	A400-
+  _B1	A100+	A4
+  _B2	A2+00	A30+0
+  _B3	A1+00	A3
+  _B4	A2	A40+0

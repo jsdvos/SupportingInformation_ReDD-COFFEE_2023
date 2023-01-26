@@ -1,0 +1,27 @@
+tfn 8 14
+# a	b	c	alpha	beta	gamma
+2.578	2.578	2.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.5	0.0	XXX
+  A2	4	0.0	0.5	0.5	XXX
+  A3	4	0.5	0.0	0.5	XXX
+  A4	4	0.5	0.0	0.0	XXX
+  B1	3	0.1371	0.1371	0.0	XXX
+  B2	3	0.8629	0.8629	0.0	XXX
+  B3	3	0.3629	0.6371	0.5	XXX
+  B4	3	0.6371	0.3629	0.5	XXX
+# E	N1	N2
+  _A1	A1	A2
+  _A2	A100+	A2
+  _A3	A3	A4
+  _A4	A3	A400+
+  _B1	A1+00	B2
+  _B2	A1	B1
+  _B3	A2+00	B4
+  _B4	A2	B3
+  _B5	A3	B4
+  _B6	A30+0	B3
+  _B7	A40+0	B2
+  _B8	A4	B1
+  _C1	B1	B2--0
+  _C2	B3	B4

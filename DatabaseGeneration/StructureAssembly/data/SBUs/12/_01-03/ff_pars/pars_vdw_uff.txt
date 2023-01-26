@@ -1,0 +1,86 @@
+#Lennard-Jones potential
+# ======================
+#
+# Mathematical form:
+# E_LJCROSS = 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+#
+
+LJCROSS:UNIT SIGMA A
+LJCROSS:UNIT EPSILON kcalmol
+
+LJCROSS:SCALE 1 0.0
+LJCROSS:SCALE 2 0.0
+LJCROSS:SCALE 3 1.0
+
+#------------------------------------------------------------------------------------------
+# KEY        label0                label1                SIGMA            EPSILON          
+#------------------------------------------------------------------------------------------
+LJCROSS:PARS C_C2O_12-01-03        O2_term               3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS O_HC_12-01-03         O4_term               3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS C_C2O_12-01-03        O_HC_12-01-03         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS B1_term               B1_term               3.6375394662e+00 1.8000000000e-01 
+LJCROSS:PARS B1_term               H6_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS O_HC_12-01-03         B1_term               3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS C_BC2_12-01-03        H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_BC2_12-01-03        O4_term               3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS H4_term               H4_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS O_HC_12-01-03         B5_term               3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS Si3_term              Si3_term              3.8264099944e+00 4.0200000000e-01 
+LJCROSS:PARS C_C2O_12-01-03        B5_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS C_C2O_12-01-03        H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_O_12-01-03          B5_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS O2_term               B5_term               3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS O2_term               H4_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS H4_term               H6_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS O_HC_12-01-03         H_O_12-01-03          2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS O2_term               Si3_term              3.4541718482e+00 1.5530614927e-01 
+LJCROSS:PARS C_BC2_12-01-03        O2_term               3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS O_HC_12-01-03         O2_term               3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS C_C2O_12-01-03        Si3_term              3.6232364560e+00 2.0545072402e-01 
+LJCROSS:PARS O2_term               O4_term               3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS C_C2O_12-01-03        B1_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS C_BC2_12-01-03        B1_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS C_BC2_12-01-03        C_C2O_12-01-03        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_BC2_12-01-03        H6_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS B1_term               H4_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS B1_term               O4_term               3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS H4_term               B5_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS Si3_term              B5_term               3.7307797266e+00 2.6899814126e-01 
+LJCROSS:PARS C_C2O_12-01-03        C_C2O_12-01-03        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS Si3_term              H4_term               3.1365923689e+00 1.3299624055e-01 
+LJCROSS:PARS B5_term               H6_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS O4_term               H4_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS O4_term               H6_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS Si3_term              H6_term               3.1365923689e+00 1.3299624055e-01 
+LJCROSS:PARS Si3_term              O4_term               3.4541718482e+00 1.5530614927e-01 
+LJCROSS:PARS C_C2O_12-01-03        O4_term               3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS H_O_12-01-03          H6_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS B1_term               Si3_term              3.7307797266e+00 2.6899814126e-01 
+LJCROSS:PARS H_O_12-01-03          H_O_12-01-03          2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C_BC2_12-01-03        B5_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS O_HC_12-01-03         H4_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS C_BC2_12-01-03        H_O_12-01-03          2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_O_12-01-03          B1_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS H_O_12-01-03          O4_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS H_O_12-01-03          H4_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS B1_term               O2_term               3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS C_BC2_12-01-03        O_HC_12-01-03         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS O4_term               O4_term               3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS O2_term               H6_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS H_O_12-01-03          Si3_term              3.1365923689e+00 1.3299624055e-01 
+LJCROSS:PARS C_C2O_12-01-03        H6_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS O_HC_12-01-03         O_HC_12-01-03         3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS O_HC_12-01-03         Si3_term              3.4541718482e+00 1.5530614927e-01 
+LJCROSS:PARS C_BC2_12-01-03        Si3_term              3.6232364560e+00 2.0545072402e-01 
+LJCROSS:PARS B5_term               B5_term               3.6375394662e+00 1.8000000000e-01 
+LJCROSS:PARS O2_term               O2_term               3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS B1_term               B5_term               3.6375394662e+00 1.8000000000e-01 
+LJCROSS:PARS O4_term               B5_term               3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS H6_term               H6_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS H_O_12-01-03          O2_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS O_HC_12-01-03         H6_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS C_C2O_12-01-03        H_O_12-01-03          2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_BC2_12-01-03        C_BC2_12-01-03        3.4308509636e+00 1.0500000000e-01 
+
+
+

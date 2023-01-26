@@ -1,0 +1,11 @@
+kgm_31-03-04_01-02-04 (DualPore-COF: J. Am. Chem. Soc, 2014, 136(45), 15885-15888)
+
+Imine linked COF in the kgm topology, with
+	Triangular SBU 31-03-04 (ETTA)
+	Linear SBU 01-02-04 (TPA)
+CURATED tag: 14020N2
+
+PXRD obtained from Fig. 1 and converted to numerical data with WebPlotDigitizer (https://apps.automeris.io/wpd/)
+The lower angle values are obtained from the full PXRD, as these are not present in the detailed inset.
+The higher angle values are obtained from the detailed inset, as this has a higher resolution.
+The split value is the lowest angle value obtained from the detailed inset.

@@ -1,0 +1,8 @@
+sql 1 2
+# a	b	c	alpha	beta	gamma
+1.0	1.0	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.0	0.0	XXX
+# E	N1	N2
+  _A1	A1+00	A1
+  _A2	A10+0	A1

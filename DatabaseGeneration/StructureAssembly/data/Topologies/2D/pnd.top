@@ -1,0 +1,19 @@
+pnd 5 9
+# a	b	c	alpha	beta	gamma
+2.5244	2.5244	10.0	90.0	90.0	120.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.3333	0.6667	0.0	XXX
+  A2	3	0.6667	0.3333	0.0	XXX
+  B1	4	0.2287	0.2287	0.0	XXX
+  B2	4	0.7713	0.0	0.0	XXX
+  B3	4	0.0	0.7713	0.0	XXX
+# E	N1	N2
+  _A1	A1	B20+0
+  _A2	A1	B3
+  _A3	A1	B1
+  _A4	A2	B3+00
+  _A5	A2	B2
+  _A6	A2	B1
+  _B1	B1	B2-00
+  _B2	B20+0	B3+00
+  _B3	B1	B30-0

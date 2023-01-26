@@ -1,0 +1,42 @@
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM    C_ch4  0.0000000000  1.1703000000
+FIXQ:ATOM    H_ch4  0.0000000000  0.7308000000
+
+
+# Lennard-Jones potential
+# =======================
+#
+# Mathematical form:
+# E_LJ = 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+#	sigma = (sigma_i + sigma_j)/2
+#	epsilon = sqrt(epsilon_i*epsilon_j)
+#
+# Parameters from the TraPPE - Explicit Hydrogen (TraPPE-EH) model
+# 	Source: http://trappe.oit.umn.edu/
+# Remark: force constants are given in units [kb*kelvin], which is
+# 	  here converted to kjmol
+
+LJ:UNIT SIGMA A
+LJ:UNIT EPSILON kjmol
+
+LJ:SCALE 1 0.0
+LJ:SCALE 2 0.0
+LJ:SCALE 3 0.0
+
+LJ:PARS C_ch4 3.31 8.314471986e-05
+LJ:PARS M_ch4 3.31 1.272114214e-01
+

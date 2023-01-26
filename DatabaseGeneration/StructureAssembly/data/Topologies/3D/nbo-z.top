@@ -1,0 +1,23 @@
+nbo-z 6 12
+# a	b	c	alpha	beta	gamma
+2.0	2.0	2.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.5	0.5	XXX
+  A2	4	0.5	0.0	0.5	XXX
+  A3	4	0.5	0.5	0.0	XXX
+  A4	4	0.0	0.5	0.0	XXX
+  A5	4	0.5	0.0	0.0	XXX
+  A6	4	0.0	0.0	0.5	XXX
+# E	N1	N2
+  _A1	A1	A4
+  _A2	A1	A400+
+  _A3	A2	A6
+  _A4	A2	A6+00
+  _A5	A3	A5
+  _A6	A3	A50+0
+  _B1	A1	A6
+  _B2	A1	A60+0
+  _B3	A2	A5
+  _B4	A2	A500+
+  _B5	A3	A4
+  _B6	A3	A4+00

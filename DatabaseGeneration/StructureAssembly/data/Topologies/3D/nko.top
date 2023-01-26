@@ -1,0 +1,29 @@
+nko 9 15
+# a	b	c	alpha	beta	gamma
+5.6982	1.7129	1.8972	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.0877	0.0	0.0	XXX
+  A2	3	0.9123	0.0	0.0	XXX
+  B1	3	0.4094	0.5	0.5	XXX
+  B2	3	0.5906	0.5	0.5	XXX
+  C1	3	0.2339	0.5	0.5	XXX
+  C2	3	0.7661	0.5	0.5	XXX
+  D1	4	0.5	0.0	0.5	XXX
+  E1	4	0.1433	0.0	0.5	XXX
+  E2	4	0.8567	0.0	0.5	XXX
+# E	N1	N2
+  _A1	A1	A2-00
+  _B1	A1	E1
+  _B2	A2	E2
+  _B3	A200+	E2
+  _B4	A100+	E1
+  _C1	B1	C1
+  _C2	B2	C2
+  _D1	B1	D10+0
+  _D2	B2	D1
+  _D3	B2	D10+0
+  _D4	B1	D1
+  _E1	C1	E10+0
+  _E2	C2	E2
+  _E3	C2	E20+0
+  _E4	C1	E1

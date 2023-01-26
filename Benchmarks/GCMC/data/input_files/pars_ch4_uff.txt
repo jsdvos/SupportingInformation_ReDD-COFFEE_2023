@@ -1,0 +1,49 @@
+# Charges obtained from Gaussian (B3LYP+D3/6-311++G(d,p)) calculation + MBIS scheme
+
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM    C_ch4  0.0000000000  1.1703000000
+FIXQ:ATOM    H_ch4  0.0000000000  0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB
+# ----------------------------------------------------
+FIXQ:BOND     C_ch4     H_ch4  -0.1577322576
+
+
+# Lennard-Jones potential
+# ======================
+#
+# Mathematical form:
+# E_LJCROSS = 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+#
+
+LJCROSS:UNIT SIGMA A
+LJCROSS:UNIT EPSILON kcalmol
+
+LJCROSS:SCALE 1 0.0
+LJCROSS:SCALE 2 0.0
+LJCROSS:SCALE 3 1.0
+
+#------------------------------------------------------------------------------------------
+# KEY        label0                label1                SIGMA            EPSILON          
+#------------------------------------------------------------------------------------------
+LJCROSS:PARS C_ch4                 C_ch4                 3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS H_ch4                 H_ch4                 2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C_ch4                 H_ch4                 2.9700465542e+00 6.7970581872e-02 
+
+
+

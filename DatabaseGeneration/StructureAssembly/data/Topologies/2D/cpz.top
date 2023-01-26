@@ -1,0 +1,22 @@
+cpz 6 11
+# a	b	c	alpha	beta	gamma
+3.7316	2.0013	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.1343	0.5	0.0	XXX
+  A2	3	0.8657	0.5	0.0	XXX
+  B1	4	0.3661	0.2502	0.0	XXX
+  B2	4	0.6339	0.7498	0.0	XXX
+  B3	4	0.6339	0.2502	0.0	XXX
+  B4	4	0.3661	0.7498	0.0	XXX
+# E	N1	N2
+  _A1	A1	B1
+  _A2	A2	B2
+  _A3	A2	B3
+  _A4	A1	B4
+  _B1	A1	A2-00
+  _C1	B1	B4
+  _C2	B2	B3
+  _D1	B1	B3
+  _D2	B2	B4
+  _E1	B1	B40-0
+  _E2	B20-0	B3

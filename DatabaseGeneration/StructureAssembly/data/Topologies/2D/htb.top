@@ -1,0 +1,23 @@
+htb 6 12
+# a	b	c	alpha	beta	gamma
+2.7321	2.7321	10.0	90.0	90.0	120.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.2113	0.7887	0.0	XXX
+  A2	4	0.2113	0.4226	0.0	XXX
+  A3	4	0.5774	0.7887	0.0	XXX
+  A4	4	0.7887	0.2113	0.0	XXX
+  A5	4	0.7887	0.5774	0.0	XXX
+  A6	4	0.4226	0.2113	0.0	XXX
+# E	N1	N2
+  _A1	A1	A5-00
+  _A2	A2	A6
+  _A3	A30-0	A4
+  _A4	A2	A4-00
+  _A5	A3	A5
+  _A6	A10-0	A6
+  _B1	A1	A2
+  _B2	A2	A3
+  _B3	A1	A3
+  _B4	A4	A5
+  _B5	A5	A6
+  _B6	A4	A6

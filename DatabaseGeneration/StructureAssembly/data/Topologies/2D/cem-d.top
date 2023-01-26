@@ -1,0 +1,21 @@
+cem-d 6 10
+# a	b	c	alpha	beta	gamma
+1.0	5.7321	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.0	0.1745	0.0	XXX
+  A2	3	0.0	0.8255	0.0	XXX
+  A3	3	0.5	0.6745	0.0	XXX
+  A4	3	0.5	0.3255	0.0	XXX
+  B1	4	0.0	0.0	0.0	XXX
+  B2	4	0.5	0.5	0.0	XXX
+# E	N1	N2
+  _A1	A1	B1
+  _A2	A2	B10+0
+  _A3	A3	B2
+  _A4	A4	B2
+  _B1	A1+00	A4
+  _B2	A2	A3
+  _B3	A1	A4
+  _B4	A2+00	A3
+  _C1	B1+00	B1
+  _C2	B2	B2-00

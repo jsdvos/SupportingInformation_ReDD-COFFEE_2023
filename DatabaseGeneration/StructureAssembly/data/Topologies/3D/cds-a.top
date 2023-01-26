@@ -1,0 +1,25 @@
+cds-a 8 12
+# a	b	c	alpha	beta	gamma
+2.6815	2.6815	4.1657	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.3135	0.0	0.0	XXX
+  A2	3	0.6865	0.0	0.0	XXX
+  A3	3	0.0	0.3135	0.5	XXX
+  A4	3	0.0	0.6865	0.5	XXX
+  B1	3	0.0	0.0	0.13	XXX
+  B2	3	0.0	0.0	0.63	XXX
+  B3	3	0.0	0.0	0.87	XXX
+  B4	3	0.0	0.0	0.37	XXX
+# E	N1	N2
+  _A1	A1	A2
+  _A2	A3	A4
+  _B1	A1	B1
+  _B2	A2	B1+00
+  _B3	A3	B2
+  _B4	A4	B20+0
+  _B5	A200+	B3+00
+  _B6	A100+	B3
+  _B7	A3	B4
+  _B8	A4	B40+0
+  _C1	B1	B4
+  _C2	B2	B3

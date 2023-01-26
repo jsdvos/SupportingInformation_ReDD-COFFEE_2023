@@ -1,0 +1,29 @@
+dia-b4+ 8 16
+# a	b	c	alpha	beta	gamma
+2.3094	2.3094	2.3095	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.0	0.0	XXX
+  B1	4	0.5	0.5	0.0	XXX
+  C1	4	0.0	0.5	0.5	XXX
+  C2	4	0.5	0.0	0.5	XXX
+  D1	4	0.75	0.75	0.75	XXX
+  D2	4	0.25	0.25	0.75	XXX
+  D3	4	0.75	0.25	0.25	XXX
+  D4	4	0.25	0.75	0.25	XXX
+# E	N1	N2
+  _A1	A1+++	D1
+  _A2	A100+	D2
+  _A3	A1+00	D3
+  _A4	A10+0	D4
+  _B1	B100+	D1
+  _B2	B100+	D2
+  _B3	B1	D3
+  _B4	B1	D4
+  _C1	C1+00	D1
+  _C2	C1	D2
+  _C3	C2	D3
+  _C4	C20+0	D4
+  _C5	C1	D4
+  _C6	C1+00	D3
+  _C7	C2	D2
+  _C8	C20+0	D1

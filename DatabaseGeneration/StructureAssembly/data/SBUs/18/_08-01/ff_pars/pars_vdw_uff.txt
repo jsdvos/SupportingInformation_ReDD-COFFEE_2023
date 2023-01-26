@@ -1,0 +1,111 @@
+#Lennard-Jones potential
+# ======================
+#
+# Mathematical form:
+# E_LJCROSS = 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+#
+
+LJCROSS:UNIT SIGMA A
+LJCROSS:UNIT EPSILON kcalmol
+
+LJCROSS:SCALE 1 0.0
+LJCROSS:SCALE 2 0.0
+LJCROSS:SCALE 3 1.0
+
+#------------------------------------------------------------------------------------------
+# KEY        label0                label1                SIGMA            EPSILON          
+#------------------------------------------------------------------------------------------
+LJCROSS:PARS C_C2O_18-08-01        C3_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C1_term               C1_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_HC2_18-08-01        C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_HC2_18-08-01        C3_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         H_C_18-08-01          2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_C2O_18-08-01        H_C_18-08-01          2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS O_BC_18-08-01         H4_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS B_CO2_18-08-01        H4_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS C_C2O_18-08-01        H3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_HC2_18-08-01        C1_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C4_term               O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS C_C3_18-08-01         C3_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C2O_18-08-01        C_HC2_18-08-01        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         C_HC2_18-08-01        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_C_18-08-01          H3_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C_C2O_18-08-01        C2_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C2_term               H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS B_CO2_18-08-01        C1_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS C3_term               O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS C_C3_18-08-01         B_CO2_18-08-01        3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS H_C_18-08-01          C_HC2_18-08-01        2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H4_term               H4_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C_C3_18-08-01         C2_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS H5_term               H5_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS O_BC_18-08-01         O_BC_18-08-01         3.1181455135e+00 6.0000000000e-02 
+LJCROSS:PARS C_HC2_18-08-01        O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS C2_term               H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS B_CO2_18-08-01        C2_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS C3_term               H3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_C_18-08-01          C4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C1_term               C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS H_C_18-08-01          H5_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C2_term               H3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_C_18-08-01          C3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS B_CO2_18-08-01        H3_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS C3_term               H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_C_18-08-01          B_CO2_18-08-01        3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS C_C2O_18-08-01        H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_C2O_18-08-01        C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C2_term               C2_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_HC2_18-08-01        H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_C2O_18-08-01        H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H4_term               H5_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C2_term               C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS H4_term               H3_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS B_CO2_18-08-01        C3_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS C_HC2_18-08-01        H3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H3_term               H3_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS B_CO2_18-08-01        H5_term               3.0582021366e+00 8.8994381845e-02 
+LJCROSS:PARS C4_term               H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_C3_18-08-01         H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS B_CO2_18-08-01        C4_term               3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS B_CO2_18-08-01        B_CO2_18-08-01        3.6375394662e+00 1.8000000000e-01 
+LJCROSS:PARS C1_term               H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C2_term               O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS C1_term               H3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_C2O_18-08-01        O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS C_HC2_18-08-01        H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_C_18-08-01          C2_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS H_C_18-08-01          C1_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS O_BC_18-08-01         H3_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS C_C3_18-08-01         C1_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C4_term               C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C1_term               O_BC_18-08-01         3.2707632962e+00 7.9372539332e-02 
+LJCROSS:PARS C_C3_18-08-01         H3_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_HC2_18-08-01        C_HC2_18-08-01        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C2O_18-08-01        C1_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         C_C2O_18-08-01        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_HC2_18-08-01        B_CO2_18-08-01        3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS H_C_18-08-01          H4_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C_C2O_18-08-01        C_C2O_18-08-01        3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C_C3_18-08-01         C_C3_18-08-01         3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C2_term               C3_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C3_term               C3_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C3_term               C4_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS H3_term               H5_term               2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C_HC2_18-08-01        C2_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C3_term               H5_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS O_BC_18-08-01         H5_term               2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS C1_term               C2_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS B_CO2_18-08-01        O_BC_18-08-01         3.3678446173e+00 1.0392304845e-01 
+LJCROSS:PARS C1_term               H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C4_term               H4_term               2.9700465542e+00 6.7970581872e-02 
+LJCROSS:PARS C_C2O_18-08-01        B_CO2_18-08-01        3.5326839347e+00 1.3747727085e-01 
+LJCROSS:PARS H_C_18-08-01          O_BC_18-08-01         2.8314605794e+00 5.1380930315e-02 
+LJCROSS:PARS H_C_18-08-01          H_C_18-08-01          2.5711337006e+00 4.4000000000e-02 
+LJCROSS:PARS C1_term               C3_term               3.4308509636e+00 1.0500000000e-01 
+LJCROSS:PARS C4_term               H3_term               2.9700465542e+00 6.7970581872e-02 
+
+
+

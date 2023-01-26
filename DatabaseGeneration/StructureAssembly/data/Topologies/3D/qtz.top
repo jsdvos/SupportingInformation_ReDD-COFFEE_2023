@@ -1,0 +1,14 @@
+qtz 3 6
+# a	b	c	alpha	beta	gamma
+1.633	1.633	1.7321	90.0	90.0	120.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.5	0.0	0.0	XXX
+  A2	4	0.0	0.5	0.666666666667	XXX
+  A3	4	0.5	0.5	0.333333333333	XXX
+# E	N1	N2
+  _A1	A2	A3
+  _A2	A10+0	A3
+  _A3	A10++	A2
+  _A4	A2+00	A3
+  _A5	A1	A3
+  _A6	A100+	A2+00

@@ -1,0 +1,270 @@
+# Bond stretch
+# ============
+#
+# Mathematical form:
+# E_BONDHARM = 0.5*K*(r - R0)**2
+#
+
+BONDHARM:UNIT K kcalmol/A**2
+BONDHARM:UNIT R0 A
+
+#-------------------------------------------------------------------------------------------
+# KEY         label0                label1                K                R0               
+#-------------------------------------------------------------------------------------------
+BONDHARM:PARS C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C3_O_term             C3_N_term             9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS H6_N_term             C5_N_term             7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C1_term               O2_term               1.2933617741e+03 1.3119403439e+00 
+BONDHARM:PARS H5_O_term             C4_O_term             7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS H_N_C2_24-02-08       N_HC2_C4_24-02-08     1.0589188944e+03 1.0434227963e+00 
+BONDHARM:PARS C5_O_term             H6_O_term             7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C4_O_term             C5_O_term             9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   1.3274378537e+03 1.3450727842e+00 
+BONDHARM:PARS C1_term               C_C3_H2C2NO_24-02-08  7.8333902511e+02 1.4580000000e+00 
+BONDHARM:PARS C3_N_term             C4_N_term             9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    1.3274378537e+03 1.3450727842e+00 
+BONDHARM:PARS C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    7.8333902511e+02 1.4580000000e+00 
+BONDHARM:PARS H2_C_C2_24-02-08      C0_HC2_HC3_24-02-08   7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS N2_term               C3_N_term             1.3274378537e+03 1.3450727842e+00 
+BONDHARM:PARS C4_N_term             C5_N_term             9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS H5_N_term             C4_N_term             7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS O2_term               C3_O_term             1.2933617741e+03 1.3119403439e+00 
+BONDHARM:PARS H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  7.1488076209e+02 1.0814180403e+00 
+BONDHARM:PARS C1_term               N2_term               1.3274378537e+03 1.3450727842e+00 
+BONDHARM:PARS C5_N_term             C5_O_term             9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C4_O_term             C3_O_term             9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  9.2531010822e+02 1.3792564054e+00 
+BONDHARM:PARS H1_C_C2_24-02-08      C1_HC2_HC3_24-02-08   7.1488076209e+02 1.0814180403e+00 
+
+
+
+# Angle bend
+# ============
+#
+# Mathematical form:
+# E_BENDCOS = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+BENDCOS:UNIT A kcalmol
+BENDCOS:UNIT PHI0 rad
+
+#-------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                M  A                PHI0             
+#-------------------------------------------------------------------------------------------------------------------
+BENDCOS:PARS C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C1_HC2_HC3_24-02-08   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C1_term               N2_term               C3_N_term             3  5.3333562753e+01 0.0000000000e+00 
+BENDCOS:PARS C1_term               C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   3  4.5414791011e+01 0.0000000000e+00 
+BENDCOS:PARS H2_C_C2_24-02-08      C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS H2_C_C2_24-02-08      C0_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C5_N_term             C5_O_term             H6_O_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C4_N_term             C5_N_term             C5_O_term             3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS O2_term               C3_O_term             C3_N_term             3  6.4029233130e+01 0.0000000000e+00 
+BENDCOS:PARS N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    3  6.8310823272e+01 0.0000000000e+00 
+BENDCOS:PARS N2_term               C3_N_term             C4_N_term             3  6.8310823272e+01 0.0000000000e+00 
+BENDCOS:PARS C4_N_term             C5_N_term             H6_N_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS O2_term               C1_term               C_C3_H2C2NO_24-02-08  3  5.8558093542e+01 0.0000000000e+00 
+BENDCOS:PARS C4_O_term             C3_O_term             C3_N_term             3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H1_C_C2_24-02-08      C1_HC2_HC3_24-02-08   C0_HC2_HC3_24-02-08   3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C4_O_term             C5_O_term             H6_O_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C3_N_term             C4_N_term             H5_N_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS N2_term               C1_term               C_C3_H2C2NO_24-02-08  3  6.2594724072e+01 0.0000000000e+00 
+BENDCOS:PARS H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  C_C2N_HC4_24-02-08    3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   3  5.3333562753e+01 0.0000000000e+00 
+BENDCOS:PARS N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  3  6.8310823272e+01 0.0000000000e+00 
+BENDCOS:PARS H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    3  4.5414791011e+01 0.0000000000e+00 
+BENDCOS:PARS C3_N_term             C4_N_term             C5_N_term             3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS O2_term               C1_term               N2_term               3  8.8578478380e+01 0.0000000000e+00 
+BENDCOS:PARS H5_O_term             C4_O_term             C5_O_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C1_term               O2_term               C3_O_term             3  7.2211389796e+01 0.0000000000e+00 
+BENDCOS:PARS C_C2N_HC4_24-02-08    N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    3  5.3333562753e+01 0.0000000000e+00 
+BENDCOS:PARS H6_N_term             C5_N_term             C5_O_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    N_C2_C4_24-02-08      3  6.8310823272e+01 0.0000000000e+00 
+BENDCOS:PARS C3_O_term             C4_O_term             C5_O_term             3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H5_N_term             C4_N_term             C5_N_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C3_O_term             C3_N_term             N2_term               3  6.8310823272e+01 0.0000000000e+00 
+BENDCOS:PARS C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    C_C2N_H2C4_24-02-08   3  4.5414791011e+01 0.0000000000e+00 
+BENDCOS:PARS H5_O_term             C4_O_term             C3_O_term             3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    3  4.5414791011e+01 0.0000000000e+00 
+BENDCOS:PARS C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     3  6.8310823272e+01 0.0000000000e+00 
+BENDCOS:PARS C4_O_term             C5_O_term             C5_N_term             3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS C0_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H1_C_C2_24-02-08      C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C3_O_term             C3_N_term             C4_N_term             3  4.9465559266e+01 0.0000000000e+00 
+BENDCOS:PARS H_N_C2_24-02-08       N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   3  2.7793605202e+01 0.0000000000e+00 
+BENDCOS:PARS H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  3  2.5461784914e+01 0.0000000000e+00 
+BENDCOS:PARS C4_O_term             C3_O_term             O2_term               3  6.4029233130e+01 0.0000000000e+00 
+
+
+
+# Torsion
+# ============
+#
+# Mathematical form:
+# E_TORSION = 0.5*A*(1-cos(M*(phi - PHI0)))
+#
+
+TORSION:UNIT A kcalmol
+TORSION:UNIT PHI0 rad
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+# KEY        label0                label1                label2                label3                M  A                PHI0             
+#-----------------------------------------------------------------------------------------------------------------------------------------
+TORSION:PARS C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C3_N_term             C4_N_term             C5_N_term             C5_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N2_term               C3_N_term             C4_N_term             H5_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C3_H2C4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H2_C_C2_24-02-08      C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_H2C2NO_24-02-08  C1_term               O2_term               C3_O_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS C3_O_term             C3_N_term             C4_N_term             C5_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H6_N_term             C5_N_term             C5_O_term             H6_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C0_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   H2_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C3_O_term             C3_N_term             C4_N_term             H5_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS O2_term               C3_O_term             C3_N_term             N2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C3_N_term             C4_N_term             C5_N_term             H6_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    N_C2_C4_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H1_C_C2_24-02-08      C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C1_HC2_HC3_24-02-08   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  H3_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C3_O_term             C4_O_term             C5_O_term             H6_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS O2_term               C3_O_term             C3_N_term             C4_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H5_O_term             C4_O_term             C5_O_term             H6_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS O2_term               C1_term               C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS H_N_C2_24-02-08       N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H_N_C2_24-02-08       N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS O2_term               C1_term               N2_term               C3_N_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS H1_C_C2_24-02-08      C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C4_N_term             C5_N_term             C5_O_term             H6_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_term               C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  C_C2N_HC4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  H3_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_HC4_24-02-08    N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    C_C3_C4N2_24-02-08    2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N2_term               C1_term               C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C1_HC2_HC3_24-02-08   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C3_H2C4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C4_O_term             C3_O_term             C3_N_term             C4_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  H0_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  H3_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  H0_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H5_N_term             C4_N_term             C5_N_term             C5_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H5_O_term             C4_O_term             C3_O_term             O2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H6_N_term             C5_N_term             C5_O_term             C4_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H5_N_term             C4_N_term             C5_N_term             H6_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS N2_term               C1_term               O2_term               C3_O_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C4_O_term             C3_O_term             C3_N_term             N2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  C_C2N_HC4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C2N_HC4_24-02-08    N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS N2_term               C3_N_term             C4_N_term             C5_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_term               C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   H2_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    N_C2_C4_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C5_O_term             C4_O_term             C3_O_term             C3_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C4_N_term             C5_N_term             C5_O_term             C4_O_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    C_C2N_H2C4_24-02-08   2  2.5000000000e+00 3.1415926536e+00 
+TORSION:PARS C3_O_term             C4_O_term             C5_O_term             C5_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   H1_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C5_O_term             C4_O_term             C3_O_term             O2_term               2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C_C3_H2C2NO_24-02-08  C1_term               N2_term               C3_N_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS C0_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS H5_O_term             C4_O_term             C5_O_term             C5_N_term             2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_term               O2_term               C3_O_term             C3_N_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS C1_term               N2_term               C3_N_term             C3_O_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS C1_term               N2_term               C3_N_term             C4_N_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS H2_C_C2_24-02-08      C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   H1_C_C2_24-02-08      2  6.7371103797e+00 3.1415926536e+00 
+TORSION:PARS C1_term               O2_term               C3_O_term             C4_O_term             2  1.3474220759e+01 3.1415926536e+00 
+TORSION:PARS H5_O_term             C4_O_term             C3_O_term             C3_N_term             2  6.7371103797e+00 3.1415926536e+00 
+
+
+
+# Inversion
+# ============
+#
+# Mathematical form:
+# E_OOPCOS = 0.5*A*(1 - cos(phi))
+#
+
+OOPCOS:UNIT A kcalmol
+
+#--------------------------------------------------------------------------------------------------------------------
+# KEY       label0                label1                label2                label3                A                
+#--------------------------------------------------------------------------------------------------------------------
+OOPCOS:PARS C_C3_H2C4_24-02-08    C0_HC2_HC3_24-02-08   H1_C_C2_24-02-08      C1_HC2_HC3_24-02-08   2.0000000000e+00 
+OOPCOS:PARS C5_N_term             C4_O_term             H6_O_term             C5_O_term             2.0000000000e+00 
+OOPCOS:PARS H6_N_term             C4_N_term             C5_O_term             C5_N_term             2.0000000000e+00 
+OOPCOS:PARS C_C3_H2C2NO_24-02-08  H2_C_C2_24-02-08      C1_HC2_HC3_24-02-08   C0_HC2_HC3_24-02-08   2.0000000000e+00 
+OOPCOS:PARS H5_O_term             C3_O_term             C5_O_term             C4_O_term             2.0000000000e+00 
+OOPCOS:PARS C0_HC2_HC3_24-02-08   H1_C_C2_24-02-08      C_C3_H2C4_24-02-08    C1_HC2_HC3_24-02-08   2.0000000000e+00 
+OOPCOS:PARS C_C2N_HC4_24-02-08    C_C2N_H2C4_24-02-08   C_C3_H2C4_24-02-08    C_C3_C4N2_24-02-08    2.0000000000e+00 
+OOPCOS:PARS C0_HC2_HC3_24-02-08   C0_HC2_HC3_24-02-08   C1_term               C_C3_H2C2NO_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C_C3_H2C2NO_24-02-08  O2_term               N2_term               C1_term               2.0000000000e+00 
+OOPCOS:PARS C4_O_term             H6_O_term             C5_N_term             C5_O_term             2.0000000000e+00 
+OOPCOS:PARS C0_HC2_HC2N_24-02-08  N_C2_C4_24-02-08      C_C3_C4N2_24-02-08    C_C2N_HC4_24-02-08    2.0000000000e+00 
+OOPCOS:PARS C_C2N_H2C4_24-02-08   H_N_C2_24-02-08       C_C2N_H2C4_24-02-08   N_HC2_C4_24-02-08     2.0000000000e+00 
+OOPCOS:PARS C1_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  H2_C_C2_24-02-08      C0_HC2_HC3_24-02-08   2.0000000000e+00 
+OOPCOS:PARS C_C3_C4N2_24-02-08    N_HC2_C4_24-02-08     C1_HC2_HC2N_24-02-08  C_C2N_H2C4_24-02-08   2.0000000000e+00 
+OOPCOS:PARS C3_N_term             C5_N_term             H5_N_term             C4_N_term             2.0000000000e+00 
+OOPCOS:PARS C0_HC2_HC2N_24-02-08  C_C2N_HC4_24-02-08    H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C4_O_term             C3_N_term             O2_term               C3_O_term             2.0000000000e+00 
+OOPCOS:PARS C_C2N_HC4_24-02-08    H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  C0_HC2_HC2N_24-02-08  2.0000000000e+00 
+OOPCOS:PARS H5_N_term             C3_N_term             C5_N_term             C4_N_term             2.0000000000e+00 
+OOPCOS:PARS C_C3_C4N2_24-02-08    C0_HC2_HC2N_24-02-08  N_C2_C4_24-02-08      C_C2N_HC4_24-02-08    2.0000000000e+00 
+OOPCOS:PARS O2_term               N2_term               C_C3_H2C2NO_24-02-08  C1_term               2.0000000000e+00 
+OOPCOS:PARS N_HC2_C4_24-02-08     C1_HC2_HC2N_24-02-08  C_C3_C4N2_24-02-08    C_C2N_H2C4_24-02-08   2.0000000000e+00 
+OOPCOS:PARS N2_term               C3_O_term             C4_N_term             C3_N_term             2.0000000000e+00 
+OOPCOS:PARS C5_O_term             H5_O_term             C3_O_term             C4_O_term             2.0000000000e+00 
+OOPCOS:PARS C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  H0_C_C2_24-02-08      C1_HC2_HC2N_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C3_O_term             C4_N_term             N2_term               C3_N_term             2.0000000000e+00 
+OOPCOS:PARS H3_C_C2_24-02-08      C0_HC2_HC2N_24-02-08  C_C2N_HC4_24-02-08    C0_HC2_HC2N_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C3_O_term             C5_O_term             H5_O_term             C4_O_term             2.0000000000e+00 
+OOPCOS:PARS O2_term               C4_O_term             C3_N_term             C3_O_term             2.0000000000e+00 
+OOPCOS:PARS C1_HC2_HC2N_24-02-08  H0_C_C2_24-02-08      C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C4_N_term             C5_O_term             H6_N_term             C5_N_term             2.0000000000e+00 
+OOPCOS:PARS C1_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   C_C3_C4N2_24-02-08    C_C3_H2C4_24-02-08    2.0000000000e+00 
+OOPCOS:PARS C_C3_H2C4_24-02-08    C_C2N_HC4_24-02-08    C_C2N_H2C4_24-02-08   C_C3_C4N2_24-02-08    2.0000000000e+00 
+OOPCOS:PARS C5_N_term             H5_N_term             C3_N_term             C4_N_term             2.0000000000e+00 
+OOPCOS:PARS N_C2_C4_24-02-08      C_C3_C4N2_24-02-08    C0_HC2_HC2N_24-02-08  C_C2N_HC4_24-02-08    2.0000000000e+00 
+OOPCOS:PARS C_C2N_H2C4_24-02-08   C_C2N_H2C4_24-02-08   H_N_C2_24-02-08       N_HC2_C4_24-02-08     2.0000000000e+00 
+OOPCOS:PARS H2_C_C2_24-02-08      C1_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  C0_HC2_HC3_24-02-08   2.0000000000e+00 
+OOPCOS:PARS C3_N_term             O2_term               C4_O_term             C3_O_term             2.0000000000e+00 
+OOPCOS:PARS C1_HC2_HC2N_24-02-08  C_C3_C4N2_24-02-08    N_HC2_C4_24-02-08     C_C2N_H2C4_24-02-08   2.0000000000e+00 
+OOPCOS:PARS C4_N_term             N2_term               C3_O_term             C3_N_term             2.0000000000e+00 
+OOPCOS:PARS C1_HC2_HC3_24-02-08   C_C3_C4N2_24-02-08    C1_HC2_HC3_24-02-08   C_C3_H2C4_24-02-08    2.0000000000e+00 
+OOPCOS:PARS C0_HC2_HC3_24-02-08   C1_term               C0_HC2_HC3_24-02-08   C_C3_H2C2NO_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C5_O_term             H6_N_term             C4_N_term             C5_N_term             2.0000000000e+00 
+OOPCOS:PARS N2_term               C_C3_H2C2NO_24-02-08  O2_term               C1_term               2.0000000000e+00 
+OOPCOS:PARS H6_O_term             C5_N_term             C4_O_term             C5_O_term             2.0000000000e+00 
+OOPCOS:PARS H0_C_C2_24-02-08      C_C2N_H2C4_24-02-08   C1_HC2_HC2N_24-02-08  C1_HC2_HC2N_24-02-08  2.0000000000e+00 
+OOPCOS:PARS C_C2N_H2C4_24-02-08   C_C3_H2C4_24-02-08    C_C2N_HC4_24-02-08    C_C3_C4N2_24-02-08    2.0000000000e+00 
+OOPCOS:PARS H1_C_C2_24-02-08      C_C3_H2C4_24-02-08    C0_HC2_HC3_24-02-08   C1_HC2_HC3_24-02-08   2.0000000000e+00 
+
+
+

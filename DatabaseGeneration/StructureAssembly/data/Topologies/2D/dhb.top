@@ -1,0 +1,17 @@
+dhb 4 8
+# a	b	c	alpha	beta	gamma
+2.0182	1.9604	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.4327	0.25	0.0	XXX
+  A2	4	0.5673	0.75	0.0	XXX
+  B1	4	0.0	0.0	0.0	XXX
+  B2	4	0.0	0.5	0.0	XXX
+# E	N1	N2
+  _A1	A1	B1
+  _A2	A1	B2
+  _A3	A2	B1++0
+  _A4	A2	B2+00
+  _B1	A1	A20-0
+  _B2	A1	A2
+  _C1	B10+0	B2
+  _C2	B1	B2

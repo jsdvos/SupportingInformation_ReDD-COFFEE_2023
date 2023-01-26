@@ -1,0 +1,36 @@
+# Charges obtained from Gaussian (B3LYP+D3/6-311++G(d,p)) calculation + MBIS scheme
+
+#Fixed charges
+#---------------
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+FIXQ:DIELECTRIC 1.0
+
+# Atomic parameters
+# ----------------------------------------------------
+# KEY        label  Q_0A              R_A
+# ----------------------------------------------------
+FIXQ:ATOM    C_ch4  0.0000000000  1.1703000000
+FIXQ:ATOM    H_ch4  0.0000000000  0.7308000000
+# Bond parameters
+# ----------------------------------------------------
+# KEY         label0   label1           P_AB
+# ----------------------------------------------------
+FIXQ:BOND     C_ch4     H_ch4  -0.1577322576
+
+
+
+MM3:UNIT SIGMA angstrom
+MM3:UNIT EPSILON kcalmol
+MM3:SCALE 1 0.0
+MM3:SCALE 2 0.0
+MM3:SCALE 3 1.0
+
+
+MM3:PARS C_ch4 2.04 0.027 0
+MM3:PARS H_ch4 1.62 0.020 0

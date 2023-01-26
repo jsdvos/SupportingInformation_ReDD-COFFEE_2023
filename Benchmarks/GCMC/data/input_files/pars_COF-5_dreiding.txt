@@ -1,0 +1,76 @@
+# Electrostatic interactions
+# ==========================
+#
+# Mathematical form:
+# E_FIXQ = q_i*q_j/r*erf(r/R)
+#
+#       with q_i = q_0i + sum(p_ij, j bonded to i)
+# 
+# The total atomic point charge is given by the sum of the 
+# pre-charge (q_0i) and the bond charge increments (p_ij).
+# The error function is included to allow the charge to be 
+# distributed according to a Gaussian distribution. By
+# putting the charge radius R to zero, the classic point
+# charge expression is obtained.
+#
+
+FIXQ:UNIT Q0 e
+FIXQ:UNIT P e
+FIXQ:UNIT R angstrom
+
+FIXQ:SCALE 1 1.0
+FIXQ:SCALE 2 1.0
+FIXQ:SCALE 3 1.0
+
+FIXQ:DIELECTRIC 1.0
+
+# Pre-charges (Q0) and charge radii (R)
+#-------------------------------------------------------------------
+# KEY     label0                 Q0                R                
+#-------------------------------------------------------------------
+FIXQ:ATOM C_C3_18-08-01          0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM C_C2O_18-08-01         0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM H_C_18-08-01           0.0000000000e+00  7.3080000000e-01 
+FIXQ:ATOM C_HC2_18-08-01         0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM B_CO2_18-08-01         0.0000000000e+00  1.2020000000e+00 
+FIXQ:ATOM O_BC_18-08-01          0.0000000000e+00  1.1325000000e+00 
+FIXQ:ATOM C_BC2_01-01-01         0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM C_HC2_01-01-01         0.0000000000e+00  1.1703000000e+00 
+FIXQ:ATOM H_C_01-01-01           0.0000000000e+00  7.3080000000e-01 
+
+# Bond charge increments (P)
+#-----------------------------------------------------------------------
+# KEY     label0                label1                 P                
+#-----------------------------------------------------------------------
+FIXQ:BOND C_C3_18-08-01         C_C3_18-08-01          3.8616090000e-04 
+FIXQ:BOND C_C2O_18-08-01        C_C2O_18-08-01         2.9495140000e-04 
+FIXQ:BOND C_C3_18-08-01         C_HC2_18-08-01         3.1226356600e-02 
+FIXQ:BOND C_C2O_18-08-01        C_HC2_18-08-01         8.0335606300e-02 
+FIXQ:BOND C_HC2_18-08-01        H_C_18-08-01          -1.6719535790e-01 
+FIXQ:BOND C_C2O_18-08-01        O_BC_18-08-01          1.5034123260e-01 
+FIXQ:BOND B_CO2_18-08-01        O_BC_18-08-01          3.4886548380e-01 
+FIXQ:BOND C_BC2_01-01-01        C_HC2_01-01-01        -7.7519559200e-02 
+FIXQ:BOND C_HC2_01-01-01        C_HC2_01-01-01        -3.3258930000e-04 
+FIXQ:BOND C_HC2_01-01-01        H_C_01-01-01          -1.3167571580e-01 
+FIXQ:BOND B_CO2_18-08-01        C_BC2_01-01-01         2.4276645575e-01 
+
+
+LJ:SCALE 1 0.0
+LJ:SCALE 2 0.0
+LJ:SCALE 3 1.0
+
+LJ:PARS C_C3_18-08-01 3.4730 0.0951
+LJ:PARS C_C2O_18-08-01 3.4730 0.0951
+LJ:PARS H_C_18-08-01 2.8464 0.0152
+LJ:PARS C_HC2_18-08-01 3.4730 0.0951
+LJ:PARS B_CO2_18-08-01 3.5814 0.0950
+LJ:PARS O_BC_18-08-01 3.0332 0.0957
+LJ:PARS C_BC2_01-01-01 3.4730 0.0951
+LJ:PARS C_HC2_01-01-01 3.4730 0.0951
+LJ:PARS H_C_01-01-01 2.8464 0.0152
+
+LJ:UNIT SIGMA A
+LJ:UNIT EPSILON kcalmol
+
+
+

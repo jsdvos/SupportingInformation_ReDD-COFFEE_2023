@@ -1,0 +1,27 @@
+cpf 8 14
+# a	b	c	alpha	beta	gamma
+4.6409	2.0	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.25	0.25	0.0	XXX
+  A2	4	0.75	0.75	0.0	XXX
+  A3	4	0.75	0.25	0.0	XXX
+  A4	4	0.25	0.75	0.0	XXX
+  B1	3	0.4085	0.5	0.0	XXX
+  B2	3	0.5915	0.5	0.0	XXX
+  B3	3	0.9085	0.0	0.0	XXX
+  B4	3	0.0915	0.0	0.0	XXX
+# E	N1	N2
+  _A1	A1	A40-0
+  _A2	A20-0	A3
+  _A3	A2	A3
+  _A4	A1	A4
+  _B1	A1	B1
+  _B2	A2	B2
+  _B3	A3	B2
+  _B4	A4	B1
+  _B5	A2	B30+0
+  _B6	A1	B4
+  _B7	A4	B40+0
+  _B8	A3	B3
+  _C1	B1	B2
+  _C2	B3-00	B4

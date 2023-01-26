@@ -1,0 +1,35 @@
+tfc-e 10 20
+# a	b	c	alpha	beta	gamma
+5.5554	2.0	1.7049	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.0	0.5	XXX
+  A2	4	0.5	0.5	0.5	XXX
+  B1	4	0.25	0.25	0.0	XXX
+  B2	4	0.75	0.75	0.0	XXX
+  B3	4	0.75	0.25	0.0	XXX
+  B4	4	0.25	0.75	0.0	XXX
+  C1	4	0.0941	0.0	0.0	XXX
+  C2	4	0.9059	0.0	0.0	XXX
+  C3	4	0.5941	0.5	0.0	XXX
+  C4	4	0.4059	0.5	0.0	XXX
+# E	N1	N2
+  _A1	A1+00	C200+
+  _A2	A1	C100+
+  _A3	A1	C1
+  _A4	A1+00	C2
+  _A5	A2	C400+
+  _A6	A2	C300+
+  _A7	A2	C3
+  _A8	A2	C4
+  _B1	B1	B4
+  _B2	B2	B3
+  _B3	B20-0	B3
+  _B4	B1	B40-0
+  _C1	B1	C1
+  _C2	B2	C20+0
+  _C3	B3	C2
+  _C4	B4	C10+0
+  _C5	B2	C3
+  _C6	B1	C4
+  _C7	B4	C4
+  _C8	B3	C3

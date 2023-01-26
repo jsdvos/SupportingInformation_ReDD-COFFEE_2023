@@ -1,0 +1,14 @@
+kgm 3 6
+# a	b	c	alpha	beta	gamma
+2.0	2.0	10.0	90.0	90.0	120.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.5	0.0	0.0	XXX
+  A2	4	0.0	0.5	0.0	XXX
+  A3	4	0.5	0.5	0.0	XXX
+# E	N1	N2
+  _A1	A10+0	A3
+  _A2	A10+0	A2
+  _A3	A2	A3
+  _A4	A1	A3
+  _A5	A1	A2+00
+  _A6	A2+00	A3

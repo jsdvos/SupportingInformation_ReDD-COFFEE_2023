@@ -1,0 +1,20 @@
+cpq 6 9
+# a	b	c	alpha	beta	gamma
+2.5684	3.241	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.3053	0.1543	0.0	XXX
+  A2	3	0.6947	0.8457	0.0	XXX
+  A3	3	0.6947	0.1543	0.0	XXX
+  A4	3	0.3053	0.8457	0.0	XXX
+  B1	3	0.0	0.3457	0.0	XXX
+  B2	3	0.0	0.6543	0.0	XXX
+# E	N1	N2
+  _A1	A1	A3
+  _A2	A2	A4
+  _B1	A1	B1
+  _B2	A2	B2+00
+  _B3	A3	B1+00
+  _B4	A4	B2
+  _C1	A1	A40-0
+  _C2	A20-0	A3
+  _D1	B1	B2

@@ -1,0 +1,32 @@
+pna 9 18
+# a	b	c	alpha	beta	gamma
+3.0521	3.0521	10.0	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	4	0.0	0.0	0.0	XXX
+  B1	4	0.331	0.0	0.0	XXX
+  B2	4	0.669	0.0	0.0	XXX
+  B3	4	0.0	0.331	0.0	XXX
+  B4	4	0.0	0.669	0.0	XXX
+  C1	4	0.2715	0.5	0.0	XXX
+  C2	4	0.7285	0.5	0.0	XXX
+  C3	4	0.5	0.2715	0.0	XXX
+  C4	4	0.5	0.7285	0.0	XXX
+# E	N1	N2
+  _A1	A1	B1
+  _A2	A1+00	B2
+  _A3	A1	B3
+  _A4	A10+0	B4
+  _B1	B10+0	C4
+  _B2	B2	C3
+  _B3	B3	C1
+  _B4	B4+00	C2
+  _B5	B20+0	C4
+  _B6	B1	C3
+  _B7	B3+00	C2
+  _B8	B4	C1
+  _C1	B1	B2
+  _C2	B3	B4
+  _D1	C1	C3
+  _D2	C2	C4
+  _D3	C2	C3
+  _D4	C1	C4

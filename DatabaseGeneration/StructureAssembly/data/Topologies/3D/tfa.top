@@ -1,0 +1,21 @@
+tfa 6 10
+# a	b	c	alpha	beta	gamma
+1.8016	1.8016	3.737	90.0	90.0	90.0
+# V	cn	frac_x	frac_y	frac_z	PG
+  A1	3	0.0	0.5	0.3838	XXX
+  A2	3	0.5	0.0	0.6162	XXX
+  A3	3	0.5	0.0	0.8838	XXX
+  A4	3	0.0	0.5	0.1162	XXX
+  B1	4	0.0	0.0	0.0	XXX
+  B2	4	0.5	0.5	0.5	XXX
+# E	N1	N2
+  _A1	A1	A4
+  _A2	A2	A3
+  _B1	A1	B2
+  _B2	A1+00	B2
+  _B3	A20+0	B2
+  _B4	A2	B2
+  _B5	A3	B1+0+
+  _B6	A3	B100+
+  _B7	A4	B1
+  _B8	A4	B10+0
