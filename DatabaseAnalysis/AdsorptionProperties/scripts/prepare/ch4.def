@@ -1,0 +1,27 @@
+# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [-]
+190.564
+4599200.0
+0.01142
+# Number Of Atoms
+5
+# Number of groups
+1
+# CH4 group
+rigid
+# number of atoms
+5
+# atomic positions
+0 C_ch4        0.000000        0.000000        0.000000
+1 H_ch4        0.000000        0.000000        1.091136
+2 H_ch4        1.028734        0.000000       -0.363712
+3 H_ch4       -0.514365       -0.890909       -0.363712
+4 H_ch4       -0.514365        0.890909       -0.363712
+# Chiral centers Bond  BondDipoles Bend  UrayBradley InvBend  Torsion Imp. Torsion Bond/Bond Stretch/Bend Bend/Bend Bend/Torsion IntraVDW IntraCoulomb
+               0    4            0    0            0       0        0            0         0            0         0            0        0            0
+# Bond stretch: atom n1-n2, type, parameters
+0 1 RIGID_BOND
+0 2 RIGID_BOND
+0 3 RIGID_BOND
+0 4 RIGID_BOND
+# Number of config moves
+0
