@@ -2,6 +2,8 @@ This file relates to the research done in the following paper:
 
 J. S. De Vos, S. Borgmans, P. Van Der Voort, S. M. J. Rogge, V. Van Speybroeck, _ReDD-COFFEE: A ready-to-use database of covalent organic framework structures and accurate force fields to enable high-throughput screenings_ (2023)
 
+A permanent data archive of this GitHub page (v1.0) is available at https://doi.org/10.5281/zenodo.7573064
+
 For the structures and force fields of the ReDD-COFFEE database, which are not included in this storage, we refer to its landing page on the Materials Cloud:
 https://doi.org/doi.org/10.24435/materialscloud:nw-3j
 
