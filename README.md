@@ -307,6 +307,8 @@ Besides these input files, that depend on the studied structure, also the `ch4.d
 
 ### Benchmark 1: Validation of the periodic force fields
 
+#### 1) PXRD patterns
+
 In first instance, the periodic force field is validated by benchmarking its capacity to reproduce the experimental powder X-ray diffraction (PXRD) pattern. This procedure is described in the `Benchmarks/PeriodicFFValidation/PXRD_redd-coffee.ipynb` file, using a pyiron workflow (https://pyiron.org/). Similar to the previous notebook, the headers in this file delineate the sequential steps in this workflow. 
 
 **input**
@@ -319,6 +321,19 @@ see notebook
 `static/` , `static_bg/`, `dynamic/`, `dynamic_bg/`
 
 Starting from the system definition, and the experimental diffraction pattern, the notebook facilitates static and dynamic force field simulations, after which the corresponding PXRD pattern is calculated. Afterward, the PXRD pattern is compared to the experimental one, and the heuristic values pertaining to their similarity/difference are calculated. Aside from the original experimental pattern, the notebook also attempts to remove the background noise, and repeats the heuristic analysis, usually leading to a better agreement.
+
+#### 2) Single crystal structures
+
+The force fields are further validated by checking their ability to reproduce single crystal X-ray diffraction (SCXRD) and 3D rotation electron diffraction (RED) structures. Therefore, the structures are reproduced with MD simulations. Initially, the experimental structures are optimized to obtain an initial structure for the simulations.
+
+`python opt.py`
+
+Subsequently, the MD simulations can be executed by running the following command:
+
+`python md.py`
+
+Finally, the internal coordinates and unit cell parameters are extracted from the resulting `COF_FF.h5` files, which contain the trajectory, and written to the `COF_FF_dyn.txt` files by the `analysis.py` post-processing script. These can be compared with the experimental data provided in the `COF_exp.txt` files.
+
 
 ### Benchmark 2: Force field arguments
 
